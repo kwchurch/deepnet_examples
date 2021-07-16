@@ -2,7 +2,7 @@
 
 Super-simple example of pre-trained OCR model from <a
 href="https://www.paddlepaddle.org.cn/hubdetail?name=chinese_text_detection_db_server&en_category=TextRecognition">PaddleHub</a>.
-See <a href="https://www.paddlepaddle.org.cn/hublist>PaddleHub
+See <a href="https://www.paddlepaddle.org.cn/hublist">PaddleHub
 home</a> for many more pre-trained models.
 
 
