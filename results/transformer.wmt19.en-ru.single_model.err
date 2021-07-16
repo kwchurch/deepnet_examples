@@ -1,5 +1,0 @@
-Using cache found in /mnt/home/kwc/.cache/torch/hub/pytorch_fairseq_master
-Traceback (most recent call last):
-  File "/mnt/home/kwc/papers/deepnets_tutorial/translate/translate.py", line 29, in <module>
-    if not model_string in tested_model_strings:
-NameError: name 'model_string' is not defined
