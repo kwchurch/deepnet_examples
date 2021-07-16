@@ -17,5 +17,5 @@ Input: images (bitmaps) on command line such as <a href="Sample_input_for_OCR.pn
 Outputs for each image on command line:
 <ol>
 <li>text with boxes such as <a href="Sample_input_for_OCR.txt">this</a>.</li>
-<li>image with boxes such as <a href="Sample_input_for_OCR_with_boxes.png">this</a>.</li>
+<li>image with boxes such as <a href="Sample_input_for_OCR.with_boxes.png">this</a>.</li>
 </ol>
