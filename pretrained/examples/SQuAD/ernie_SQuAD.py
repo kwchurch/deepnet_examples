@@ -3,6 +3,8 @@ from paddlenlp.transformers import ErnieForQuestionAnswering
 from paddlenlp.transformers import ErnieTokenizer
 import sys
 
+# example usage: python ernie_SQuAD.py < sample_SQuAD_input.txt
+
 ernie = 'ernie-2.0-en-finetuned-squad'
 model = ErnieForQuestionAnswering.from_pretrained(ernie)
 tokenizer = ErnieTokenizer.from_pretrained(ernie)

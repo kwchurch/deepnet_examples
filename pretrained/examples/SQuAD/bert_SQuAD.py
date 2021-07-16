@@ -3,6 +3,8 @@ from transformers import BertForQuestionAnswering
 from transformers import BertTokenizer
 import sys
 
+# example usage: python bert_SQuAD.py < sample_SQuAD_input.txt
+
 bert='bert-large-uncased-whole-word-masking-finetuned-squad'
 model = BertForQuestionAnswering.from_pretrained(bert)
 tokenizer = BertTokenizer.from_pretrained(bert)

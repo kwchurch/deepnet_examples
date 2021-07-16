@@ -1,25 +1,26 @@
 # SQuAD
 
+Very simple programs to use pretrained SQuAD models from on https://huggingface.co/transformers
 
-Very simple programs  to use BERT-SQuAD and ERNIE-SQuAD to find long forms (LFs) for short forms (SFs)
 ```shell 
   pip install -r requirements.txt
-  python bert_SQuAD.py < sample_input.txt 
-  python ernie_SQuAD.py < sample_input.txt 
+  python bert_SQuAD.py < sample_SQuAD_input.txt
+  python ernie_SQuAD.py < sample_SQuAD_input.txt
 ```
 
-Some SQuAD questions involve acronyms, and therefore,
-these pre-trained models can be used to find expansions of SFs (short forms).
-The input is a SF and a context.  Output is a LF (long form).
+Many <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD</a>
+questions involve acronyms: <i>What does NFL stand for?</i>.  The
+following examples show how to use these pretrained SQuAD models to
+find LF (long form) expansions of SFs (short forms):
 
-```shell 
-  python ernie_acronym.py < sample_acronym_input.txt
-  python bert_acronym.py < sample_acronym_input.txt
-```
 
-We have tested on python 3.6.9.  Other versions may work but not tested.
-
-If this does not work, you may try to upgrade pip.  Also, this may help:
 ```shell
-  pip install --upgrade paddlenlp -i https://pypi.org/simple
-  ```
+   python bert_acronym.py < sample_acronym_input.txt
+   python ernie_acronym.py < ernie_acronym_input.txt
+```
+
+Although these models work surprisingly well on acronyms, there are
+better solutions such as <a
+href="https://github.com/ncbi-nlp/Ab3P">Ab3P</a>.
+
+We have tested on python 3.6.9.  Other versions may work, though they have not been tested.
