@@ -8,8 +8,6 @@ ocr = hub.Module(name="chinese_ocr_db_crnn_server")
 # input: one or more bitmaps on command line
 # output: for each bitmap, output positions, text, copy of bitmap with red boxes
 
-
-
 color=(0,0,255)                 # red
 thickness=2
 images = [cv2.imread(f) for f in sys.argv[1:]]

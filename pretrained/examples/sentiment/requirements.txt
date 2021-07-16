@@ -2,4 +2,3 @@ paddlepaddle
 paddlenlp
 shapely
 pyclipper
-
