@@ -1,7 +1,7 @@
 
 import paddlenlp,sys,argparse,paddlenlp.datasets
 
-# example usage: python dataset_to_text.py -d ptb -o /mnt/big/kwc/useful_resources/paddlenlp/datasets/text/ptb
+# example usage: python dataset_to_text.py -d ptb -o text/ptb
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset", help='see https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/datasets.md', required=True)
