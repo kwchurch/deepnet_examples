@@ -1,0 +1,27 @@
+transformer.wmt14.en-fr
+Hello World	Bonjour au monde
+transformer.wmt16.en-de
+Hello World	Hallo Welt
+transformer.wmt18.en-de
+transformer.wmt19.de-en
+Hello World	Hello World
+transformer.wmt19.de-en.single_model
+Hello World	Hello World
+transformer.wmt19.en-de
+Hello World	Hallo Welt
+transformer.wmt19.en-de.single_model
+Hello World	Hallo Welt
+transformer.wmt19.en-ru
+Hello World	Hello World
+transformer.wmt19.en-ru.single_model
+Hello World	Hello World
+transformer.wmt19.ru-en
+Hello World	Hello World
+transformer.wmt19.ru-en.single_model
+Hello World	Hello World
+transformer.wmt20.en-iu.news
+transformer.wmt20.en-iu.nh
+transformer.wmt20.en-ta
+transformer.wmt20.iu-en.news
+transformer.wmt20.iu-en.nh
+transformer.wmt20.ta-en

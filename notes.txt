@@ -1,0 +1,202 @@
+source $HOME/venv/my_test/bin/activate
+module load cuda                                                                
+module load cudnn                                                               
+module load nccl
+echo 'Hello world!' | python ~kwc/papers/deepnets_tutorial/translate.py
+sbatch -p CPU_only -o download_models.out -e download_models.err download_models.sh
+
+cd ~kwc/papers/deepnets_tutorial
+sbatch -p CPU_only -o download_models.out2 -e download_models.err2 download_models.sh
+
+Jiahong Yuan  7:23 PM
+scripts for training pinyin2hanzi transformer: /mnt/scratch/jiahong/pinyin2hanzi/transformer/prepare_full.sh (data preparation) and train_full.sh (training)
+
+
+
+
+
+7:23
+Please let me know if you have any questions.
+
+Jiahong Yuan  8:29 PM
+https://github.com/pytorch/fairseq/blob/master/examples/translation/README.md
+
+pip install fastBPE sacremoses subword_nmt
+
+import torch
+
+# List available models
+torch.hub.list('pytorch/fairseq')  # [..., 'transformer.wmt16.en-de', ... ]
+
+# Load a transformer trained on WMT'16 En-De
+# Note: WMT'19 models use fastBPE instead of subword_nmt, see instructions below
+en2de = torch.hub.load('pytorch/fairseq', 'transformer.wmt16.en-de',
+                       tokenizer='moses', bpe='subword_nmt')
+en2de.eval()  # disable dropout
+
+# The underlying model is available under the *models* attribute
+assert isinstance(en2de.models[0], fairseq.models.transformer.TransformerModel)
+
+# Move model to GPU for faster translation
+en2de.cuda()
+
+# Translate a sentence
+en2de.translate('Hello world!')
+# 'Hallo Welt!'
+
+# Batched translation
+en2de.translate(['Hello world!', 'The cat sat on the mat.'])
+# ['Hallo Welt!', 'Die Katze saß auf der Matte.']
+
+cd /mnt/big/kwc/useful_resources/fairseq/models
+https://dl.fbaipublicfiles.com/fairseq/models/wmt14.v2.en-fr.fconv-py.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/data/wmt14.v2.en-fr.newstest2014.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/data/wmt14.v2.en-fr.ntst1213.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/models/wmt14.en-de.fconv-py.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/data/wmt14.en-de.newstest2014.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/models/wmt17.v2.en-de.fconv-py.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/data/wmt17.v2.en-de.newstest2014.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/models/wmt14.en-fr.joined-dict.transformer.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/data/wmt14.en-fr.joined-dict.newstest2014.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/models/wmt16.en-de.joined-dict.transformer.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/data/wmt16.en-de.joined-dict.newstest2014.tar.bz2
+https://dl.fbaipublicfiles.com/fairseq/models/wmt18.en-de.ensemble.tar.gz
+https://dl.fbaipublicfiles.com/fairseq/models/wmt19.en-de.joined-dict.ensemble.tar.gz
+https://dl.fbaipublicfiles.com/fairseq/models/wmt19.de-en.joined-dict.ensemble.tar.gz
+https://dl.fbaipublicfiles.com/fairseq/models/wmt19.en-ru.ensemble.tar.gz
+https://dl.fbaipublicfiles.com/fairseq/models/wmt19.ru-en.ensemble.tar.gz
+
+cd /mnt/big/kwc/useful_resources/fairseq/models
+for path in `cat /mnt/big/kwc/useful_resources/fairseq/models/paths.txt`
+do
+echo $path
+curl $path | tar xvjf -
+done
+
+cd /mnt/big/kwc/useful_resources/fairseq/models
+for path in `cat /mnt/big/kwc/useful_resources/fairseq/models/paths.txt | egrep "gz$"`
+do
+echo $path
+curl $path | tar xvzf -
+done
+
+egrep 'transformer.wmt.*en' $HOME/papers/deepnets_tutorial/models | 
+while read m
+do
+echo $m
+echo 'Hello World' | python $HOME/papers/deepnets_tutorial/translate/translate.py -m $m
+done > $HOME/papers/deepnets_tutorial/models.hello
+
+queues=1080Ti_short,1080Ti,2080Ti,TitanXx8_mlong,TitanXx8
+m=transformer.wmt19.en-de
+res=$HOME/papers/deepnets_tutorial/results
+mkdir -p $res
+sbatch -o $res/$m.out -e $res/$m.err --gres=gpu:1 -p $queues  ~/papers/deepnets_tutorial/hello.sh transformer.wmt19.en-de
+
+mv $HOME/papers/deepnets_tutorial/results $HOME/papers/deepnets_tutorial/results.bak
+mkdir $res
+egrep 'transformer.wmt.*en' $HOME/papers/deepnets_tutorial/models | 
+while read m
+do
+sbatch -o $res/$m.out -e $res/$m.err --gres=gpu:1 -p $queues  ~/papers/deepnets_tutorial/hello.sh $m
+done
+
+
+https://www.analyticsvidhya.com/blog/2020/03/6-pretrained-models-text-classification/
+https://github.com/zihangdai/xlnet
+
+
+pip install shapely
+pip install pyclipper
+
+import paddlehub as hub
+>>> import cv2
+>>> ocr = hub.Module(name="chinese_ocr_db_crnn_server")
+[2021-07-15 17:41:53,515] [ WARNING] - The _initialize method in HubModule will soon be deprecated, you can use the __init__() to handle the initialization of the object
+W0715 17:41:53.527844  3134 analysis_predictor.cc:1183] Deprecated. Please use CreatePredictor instead.
+---    Fused 0 subgraphs into layer_norm op.
+---    Fused 0 subgraphs into layer_norm op.
+>>> result = ocr.recognize_text([cv2.imread('/mnt/home/kwc/Sample_input_for_OCR.png')])
+[2021-07-15 17:42:20,644] [ WARNING] - The _initialize method in HubModule will soon be deprecated, you can use the __init__() to handle the initialization of the object
+---    Fused 0 subgraphs into layer_norm op.
+
+>>> >>> result
+[{'save_path': '', 'data': [{'text': 'OCR超轻量中英文识别', 'confidence': 0.9987144470214844, 'text_box_position': [[93, 62], [752, 62], [752, 116], [93, 116]]}, {'text': '飞奖首次开源文字识别模型套件PaddleOCR，目标是打造丰富、领先、实用的文本识别模型/工具库。最新开源的超轻量ppocr_mobile移动端系列：检测（2.6M）+方向分', 'confidence': 0.9790704250335693, 'text_box_position': [[88, 170], [2184, 170], [2184, 206], [88, 206]]}, {'text': '类器(0.9M）+识别（4.6M）=8.1M。同时支持中英文识别；支持倾斜、竖排等多种方向文字识别；在测试数据单图平均17个检测框条件下，T4单次预测全程平均耗时', 'confidence': 0.9820073246955872, 'text_box_position': [[81, 206], [2189, 209], [2189, 254], [81, 251]]}, {'text': '仅137ms；支持GPU、CPU预测；用户既可以通过PaddleHub很便捷的直接使用该超轻量模型，也可以使用PaddleOCR开源套件训练自己的超轻量模型。飞奖在不断为各位', 'confidence': 0.9845072627067566, 'text_box_position': [[88, 260], [2187, 260], [2187, 296], [88, 296]]}, {'text': '开发者同学开源更多预训练模型、提供更多丰富有趣的场景，也希望各位同学能够多给我们一些鼓励。点击进入下方的Github地址，为PaddleHub和PaddleOCR的开发', 'confidence': 0.9856271147727966, 'text_box_position': [[86, 305], [2189, 305], [2189, 341], [86, 341]]}, {'text': '者同学点个star(-）', 'confidence': 0.9430265426635742, 'text_box_position': [[88, 350], [398, 350], [398, 386], [88, 386]]}, {'text': 'PaddleHub地址', 'confidence': 0.9998105764389038, 'text_box_position': [[402, 458], [572, 458], [572, 494], [402, 494]]}, {'text': 'PaddleOCR地址', 'confidence': 0.9991748929023743, 'text_box_position': [[123, 464], [295, 464], [295, 491], [123, 491]]}, {'text': '在线教程', 'confidence': 0.999720573425293, 'text_box_position': [[719, 458], [822, 458], [822, 497], [719, 497]]}]}]
+
+print('\n'.join([str(x) for x in result[0]['data']]))
+{'text': 'OCR超轻量中英文识别', 'confidence': 0.9987144470214844, 'text_box_position': [[93, 62], [752, 62], [752, 116], [93, 116]]}
+{'text': '飞奖首次开源文字识别模型套件PaddleOCR，目标是打造丰富、领先、实用的文本识别模型/工具库。最新开源的超轻量ppocr_mobile移动端系列：检测（2.6M）+方向分', 'confidence': 0.9790704250335693, 'text_box_position': [[88, 170], [2184, 170], [2184, 206], [88, 206]]}
+{'text': '类器(0.9M）+识别（4.6M）=8.1M。同时支持中英文识别；支持倾斜、竖排等多种方向文字识别；在测试数据单图平均17个检测框条件下，T4单次预测全程平均耗时', 'confidence': 0.9820073246955872, 'text_box_position': [[81, 206], [2189, 209], [2189, 254], [81, 251]]}
+{'text': '仅137ms；支持GPU、CPU预测；用户既可以通过PaddleHub很便捷的直接使用该超轻量模型，也可以使用PaddleOCR开源套件训练自己的超轻量模型。飞奖在不断为各位', 'confidence': 0.9845072627067566, 'text_box_position': [[88, 260], [2187, 260], [2187, 296], [88, 296]]}
+{'text': '开发者同学开源更多预训练模型、提供更多丰富有趣的场景，也希望各位同学能够多给我们一些鼓励。点击进入下方的Github地址，为PaddleHub和PaddleOCR的开发', 'confidence': 0.9856271147727966, 'text_box_position': [[86, 305], [2189, 305], [2189, 341], [86, 341]]}
+{'text': '者同学点个star(-）', 'confidence': 0.9430265426635742, 'text_box_position': [[88, 350], [398, 350], [398, 386], [88, 386]]}
+{'text': 'PaddleHub地址', 'confidence': 0.9998105764389038, 'text_box_position': [[402, 458], [572, 458], [572, 494], [402, 494]]}
+{'text': 'PaddleOCR地址', 'confidence': 0.9991748929023743, 'text_box_position': [[123, 464], [295, 464], [295, 491], [123, 491]]}
+{'text': '在线教程', 'confidence': 0.999720573425293, 'text_box_position': [[719, 458], [822, 458], [822, 497], [719, 497]]}
+>>> 
+
+
+
+# Python program to explain cv2.rectangle() method 
+   
+# importing cv2 
+import cv2 
+   
+# path 
+path = r'C:\Users\Rajnish\Desktop\geeksforgeeks\geeks.png'
+   
+# Reading an image in default mode
+image = cv2.imread(path)
+   
+# Window name in which image is displayed
+window_name = 'Image'
+  
+# Start coordinate, here (5, 5)
+# represents the top left corner of rectangle
+start_point = (5, 5)
+  
+# Ending coordinate, here (220, 220)
+# represents the bottom right corner of rectangle
+end_point = (220, 220)
+  
+# Blue color in BGR
+color = (255, 0, 0)
+  
+# Line thickness of 2 px
+thickness = 2
+  
+# Using cv2.rectangle() method
+# Draw a rectangle with blue line borders of thickness of 2 px
+image = cv2.rectangle(image, start_point, end_point, color, thickness)
+  
+# Displaying the image 
+cv2.imshow(window_name, image)
+o
+
+
+
+import paddlehub as hub
+
+lac = hub.Module(name="lac")
+test_text = ["今天是个好日子", "天气预报说今天要下雨", "下一班地铁马上就要到了"]
+
+results = lac.cut(text=test_text, use_gpu=False, batch_size=1, return_tag=True)
+
+for result in results:
+    print(result['word'])
+    print(result['tag'])
+
+https://www.paddlepaddle.org.cn/hubdetail?name=lac&en_category=LexicalAnalysis
+
+git init
+Initialized empty Git repository in /mnt/home/kwc/papers/deepnets_tutorial/.git/
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ mkdir master
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ mv examples master/
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ git add master
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ git commit -m "First commit"
+
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ git remote add origin https://github.com/kwchurch/deepnet_examples.git
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ git branch -M main
+(test) kwc@asimov-7:~/papers/deepnets_tutorial$ git push -u origin main
+
+git pull https://github.com/kwchurch/deepnet_examples.git
