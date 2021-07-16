@@ -1,0 +1,9 @@
+Sample_input_for_OCR.png	(93, 62)	(752, 116)	OCR超轻量中英文识别
+Sample_input_for_OCR.png	(88, 170)	(2184, 206)	飞奖首次开源文字识别模型套件PaddleOCR，目标是打造丰富、领先、实用的文本识别模型/工具库。最新开源的超轻量ppocr_mobile移动端系列：检测（2.6M）+方向分
+Sample_input_for_OCR.png	(81, 206)	(2189, 254)	类器(0.9M）+识别（4.6M）=8.1M。同时支持中英文识别；支持倾斜、竖排等多种方向文字识别；在测试数据单图平均17个检测框条件下，T4单次预测全程平均耗时
+Sample_input_for_OCR.png	(88, 260)	(2187, 296)	仅137ms；支持GPU、CPU预测；用户既可以通过PaddleHub很便捷的直接使用该超轻量模型，也可以使用PaddleOCR开源套件训练自己的超轻量模型。飞奖在不断为各位
+Sample_input_for_OCR.png	(86, 305)	(2189, 341)	开发者同学开源更多预训练模型、提供更多丰富有趣的场景，也希望各位同学能够多给我们一些鼓励。点击进入下方的Github地址，为PaddleHub和PaddleOCR的开发
+Sample_input_for_OCR.png	(88, 350)	(398, 386)	者同学点个star(-）
+Sample_input_for_OCR.png	(402, 458)	(572, 494)	PaddleHub地址
+Sample_input_for_OCR.png	(123, 464)	(295, 491)	PaddleOCR地址
+Sample_input_for_OCR.png	(719, 458)	(822, 497)	在线教程

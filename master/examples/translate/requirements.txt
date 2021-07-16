@@ -1,0 +1,5 @@
+fairseq
+torch
+fastBPE
+sacremoses
+subword_nmt
