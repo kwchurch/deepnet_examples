@@ -6,12 +6,9 @@ See <a href="https://www.paddlepaddle.org.cn/hublist">PaddleHub
 home</a> for many more pre-trained models.
 
 
-Install:
-   ```pip install -r requirements.txt```
-
-Example of Usage:
-   ```python sentiment.py < sample_input.txt```
-
-Input: Chinese text such as <a href="sample_input.txt">this</a>.
-
+```shell 
+  pip install -r requirements.txt
+  python paddle_sentiment.py < sample_Chinese_input.txt
+  python huggingface_sentiment.py < sample_English_input.txt
+```
 Outputs sentiment label and probability for each input line.

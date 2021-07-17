@@ -2,3 +2,4 @@ paddlepaddle
 paddlenlp
 shapely
 pyclipper
+transformers

@@ -1,7 +1,7 @@
 import sys
 import paddlehub as hub
 
-# example usage: python sentiment.py < sample_input.txt 
+# example usage: python paddle_sentiment.py < sample_Chinese_input.txt 
 
 senta = hub.Module(name="senta_bilstm")
 
