@@ -10,7 +10,7 @@ Super-simple examples of HuggingFace pipelines, based on <a href="https://huggin
 
 Huggingface pipelines provides support for a number of important cases including:
 <ol>
-<li>sentiment-analysis<li>
+<li>sentiment-analysis</li>
 <li>ner (Named Entity Recognition)</li>
 <li>question-answering (such as SQuAD)</li>
 <li>translation</li>
