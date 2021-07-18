@@ -9,3 +9,6 @@ Simple program to load datasets based on <a href="https://huggingface.co/dataset
   # list datasets
   python dataset_to_text.py -l 1
 ```
+
+Some datasets may not load, or may require special options to load.
+This program successfully loaded <a href="successfully_loaded.html">these datasets</a>.
