@@ -15,6 +15,7 @@ Super-simple examples of HuggingFace pipelines, based on <a href="https://huggin
   python question_answering.py < sample_SQuAD_input.txt 
 
   # translation
+  # supports many language pairs (see https://huggingface.co/Helsinki-NLP)
   python translate.py --source_language en --target_language de < sample_translate_input.txt 
   python translate.py --source_language en --target_language zh < sample_English_input.txt 
   python translate.py --source_language zh --target_language en < sample_Chinese_input.txt 

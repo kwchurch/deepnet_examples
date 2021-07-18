@@ -24,9 +24,8 @@ if args.source_language in ['en'] and args.target_language in ['fr', 'de', 'ro']
             res = translator(sent, max_length=400)
             print(res[0]['translation_text'])
 else:
-    # There are pretrained models for many more language pairs
-    # see https://github.com/Helsinki-NLP/OPUS-MT-train
-    # and https://www.aclweb.org/anthology/2020.eamt-1.pdf#page=499
+    # There are pretrained models for many more language pairs 
+    # See https://huggingface.co/Helsinki-NLP and https://www.aclweb.org/anthology/2020.eamt-1.pdf#page=499
     model_string = 'Helsinki-NLP/opus-mt-' + args.source_language + '-' + args.target_language
     model = AutoModelWithLMHead.from_pretrained(model_string)
     tokenizer = AutoTokenizer.from_pretrained(model_string)
