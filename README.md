@@ -4,6 +4,8 @@ If loading models runs into a timeout, please try again.
 
 There is a README in most subdirectories below.  Each subdirectory should be self-explanatory and indepedent of one another.
 
-That said, a good place to start is: <a href="https://github.com/kwchurch/deepnet_examples/tree/main/pretrained/examples/HuggingFace_pipeline">HuggingFace Pipelines</a>.
-
+<ol>
+<li>Examples of loading datasets: <a href="datasets">here</a>.</li>
+<li>Examples of using pretrained models <a href="pretrained/examples">here</a> for a number of different applications from a number of different sources.</li>
+</ol>
 
