@@ -6,6 +6,6 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 
 <ol>
 <li> Click <a href="datasets">here</a> for examples of loading datasets from two sources, PaddleHub and HuggingFace.</li>
-<li> Click here <a href="pretrained/examples">here</a> for examples of pretrained models for several applications from several sources.</li>
+<li> Click <a href="pretrained/examples">here</a> for examples of pretrained models for several applications from several sources.</li>
 </ol>
 
