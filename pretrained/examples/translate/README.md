@@ -17,3 +17,5 @@ For help:
 
 If you specify an unknown model, you will see a list of known models.
       
+See also: https://github.com/kwchurch/deepnet_examples/tree/main/pretrained/examples/HuggingFace_pipeline
+for translation of more language pairs, using HuggingFace piplines
