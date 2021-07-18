@@ -22,11 +22,11 @@ Super-simple examples of HuggingFace pipelines, based on <a href="https://huggin
 
   # back translation
   cat sample_Chinese_input.txt |
-    python translate.py --source_language en --target_language en | 
+    python translate.py --source_language en --target_language zh | 
     python translate.py --source_language zh --target_language en
 ```
 
-Huggingface pipelines provides support for a number of important cases including:
+Huggingface pipelines provides support for a number of important applications including:
 <ol>
 <li>sentiment-analysis</li>
 <li>ner (Named Entity Recognition)</li>
