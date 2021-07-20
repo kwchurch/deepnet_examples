@@ -1,4 +1,4 @@
-# Datasets
+# Datasets based on HuggingfaceHub
 
 Simple program to load datasets based on <a href="https://huggingface.co/datasets">datasets in HuggingFace</a>
 
