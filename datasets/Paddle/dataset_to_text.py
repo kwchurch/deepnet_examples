@@ -6,7 +6,7 @@ import paddlenlp,sys,argparse,paddlenlp.datasets
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset", help='see https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/datasets.md', required=True)
 parser.add_argument("-o", "--output", help='output file', required=True)
-parser.add_argument("-l", "--list", int=0, help='list supported datasets', default=0)
+parser.add_argument("-l", "--list", type=int, help='list supported datasets', default=0)
 args = parser.parse_args()
 
 
