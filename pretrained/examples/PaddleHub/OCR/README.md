@@ -1,4 +1,4 @@
-# OCR
+# Application OCR, based on PaddleHub
 
 Super-simple example of pre-trained OCR model from <a
 href="https://www.paddlepaddle.org.cn/hubdetail?name=chinese_text_detection_db_server&en_category=TextRecognition">PaddleHub</a>.
