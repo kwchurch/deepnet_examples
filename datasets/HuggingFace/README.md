@@ -8,6 +8,19 @@ Simple program to load datasets based on <a href="https://huggingface.co/dataset
   python dataset_to_text.py -d ptb_text_only -o text/ptb_text_only*
   # list datasets
   python dataset_to_text.py -l 1
+
+  # a few datasets such as xglue and wikitext require a config argument
+  mkdir -p text/xglue
+  for config in mlqa nc ner ntg  paws-x pos qadsm qam qg wpr xnli
+    do
+    python dataset_to_text.py -d xglue -o text/xglue/$config -c $config
+    done
+
+  mkdir -p text/wikitext
+  for config in wikitext-103-raw-v1 wikitext-103-v1 wikitext-2-raw-v1 wikitext-2-v1
+    do
+    python dataset_to_text.py -d wikitext -o text/wikitext/$config -c $config
+    done
 ```
 
 Some datasets may not load, or may require special options to load.

@@ -10,6 +10,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset", help='see https://huggingface.co/datasets', default=None)
 parser.add_argument("-o", "--output", help='output file [defaults --> dataset]', default=None)
 parser.add_argument("-l", "--list", type=int, help='list supported datasets', default=0)
+parser.add_argument("-c", "--config", help='usually not necessary, but required for some datasets such as xglue', default=None)
 args = parser.parse_args()
 
 if args.list != 0:
@@ -36,10 +37,15 @@ def data_output(split, d):
             for sent in d:
                 print(dict2str(sent), file=fd)
 
+def my_load_dataset():
+    if args.config is None:
+        return datasets.load_dataset(args.dataset)
+    else: return datasets.load_dataset(args.dataset, args.config)
+
 if not args.dataset is None:
-    if not args.output is None:
+    if args.output is None:
         args.output = args.dataset
-    ds = datasets.load_dataset(args.dataset)
+    ds = my_load_dataset()
     for split in ds:
         data_output(split, ds[split])
 
