@@ -5,6 +5,7 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 <ol>
 <li>Applications
 <ol>
+<li>Image Classification</li>
 <li>OCR: Optical Character Recognition</li>
 <li>Sentiment Analysis</li>
 <li>NER: Named Entity Recognition</li>
@@ -22,7 +23,8 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 </ol>
 
 <table>
-<tr> <th> </th>      <th> PaddleHub </th>  <th> PaddleNLP </th> <th> HuggingFace </th> <th> Fairseq </th> </tr>
+<tr> <th> </th>      <th> PaddleHub </th>  <th> PaddleNLP </th> <th> HuggingFaceHub </th> <th> Fairseq </th> </tr>
+<tr> <th> Image Classification </th>  <td> <td> </td> </td> <td> <a href="HuggingFaceHub/image_classification">example</a>  </td> <td> </td> </tr>
 <tr> <th> OCR </th>  <td> <a href="PaddleHub/OCR">example</a> <td> </td> </td> <td> </td> <td> </td> </tr>
 <tr> <th> Sentiment </th> <td> <a href="PaddleHub/sentiment">example</a> <td> </td> </td> <td> <a href="HuggingFaceHub/sentiment">example</a>  </td> <td> </td> </tr>
 <tr> <th> NER </th> <td> </td> <td> </td><td> <a href="HuggingFaceHub/ner">example</a> </td>  </tr>
