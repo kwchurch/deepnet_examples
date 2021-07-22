@@ -50,11 +50,11 @@ europa_ecdc_tm en2bg en2fr en2sl
 europarl_bilingual bg-cs bg-da bg-de bg-el bg-en
 evidence_infer_treatment 2.0 1.1
 fever v1.0 v2.0 wiki_pages
-few_rel.err2:ValueError: Cannot name a custom BuilderConfig the same as an available BuilderConfig. Change the name. Available BuilderConfigs: default
+few_rel default
 financial_phrasebank sentences_allagree sentences_75agree sentences_66agree sentences_50agree
 flores neen sien
 flue CLS PAWS-X XNLI WSD-V
-giga_fren.err2:ValueError: Cannot name a custom BuilderConfig the same as an available BuilderConfig. Change the name. Available BuilderConfigs: en-fr
+giga_fren en-fr
 glue cola sst2 mrpc qqp stsb mnli mnli_mismatched mnli_matched qnli rte wnli ax
 guardian_authorship cross_topic_1 cross_topic_2 cross_topic_3 cross_topic_4 cross_topic_5 cross_topic_6 cross_topic_7 cross_topic_8 cross_topic_9 cross_topic_10 cross_topic_11 cross_topic_12 cross_genre_1 cross_genre_2 cross_genre_3 cross_genre_4
 hansards house senate

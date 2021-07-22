@@ -24,8 +24,12 @@ Simple program to load datasets based on <a href="https://huggingface.co/dataset
 ```
 
 Some datasets may not load, or may require special options to load.
-The datasets below were tested (&#128512; indicates success, and &#9888; is a warning that a --config argument is required).
-See config.txt for config arguments.
+The code in this directory was tested on the following datasets.
+<ul>
+<li>&#128512; indicates success,</li>
+<li>&#128721; indicates failure, and</li>
+<li> &#9888; is a warning that a --config argument is required; see config.txt for config arguments for a number of datasets.</li>
+</ul>
 
 <ol>
 <li> <a href="https://huggingface.co/datasets/acronym_identification">acronym_identification</a> &#128512; </li>
