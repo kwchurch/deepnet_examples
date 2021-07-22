@@ -1,0 +1,11 @@
+from datasets import load_dataset
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-d", "--dataset", help="e.g., patrickvonplaten/librispeech_asr_dummy", required=True)
+parser.add_argument("-c", "--config", help="e.g., clean", default=None)
+parser.add_argument("-s", "--split", help="e.g., validation", default=None)
+args = parser.parse_args()
+
+ds = load_dataset(args.dataset, args.config, args.split)
+print('\n'.join(ds['file']))
+
