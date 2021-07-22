@@ -1,0 +1,14 @@
+import paddlehub as hub
+import soundfile as sf
+
+# Load fastspeech_ljspeech module.
+module = hub.Module(name="fastspeech_ljspeech")
+
+# Predict sentiment label
+test_texts = ['Simple as this proposition is, it is necessary to be stated',
+              'Parakeet stands for Paddle PARAllel text-to-speech toolkit']
+
+wavs, sample_rate = module.synthesize(texts=test_texts)
+
+for index, wav in enumerate(wavs):
+    sf.write(f"{index}.wav", wav, sample_rate)

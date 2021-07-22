@@ -11,6 +11,8 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 <li>NER: Named Entity Recognition</li>
 <li>QA: Question Answering (SQuAD)</li>
 <li>MT: Machine Translation</li>
+<li>TTS: Text to Speech</li>
+<li>STT: Speech to Text</li>
 </ol></li>
 
 <li>Sources
@@ -30,4 +32,6 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 <tr> <th> NER </th> <td> </td> <td> </td><td> <a href="HuggingFaceHub/ner">example</a> </td>  </tr>
 <tr> <th> QA </th> <td> </td> <td> <a href="PaddleNLP/question_answering">example</a> <td> <a href="HuggingFaceHub/question_answering">example</a> </td> </td> <td> </td> </tr>
 <tr> <th> MT </th> <td> <a href="PaddleHub/translate">example</a> </td> <td> </td> <td> <a href="HuggingFaceHub/translate">example</a> </td>  <td> <a href="Fairseq/translate">example</a> </td> </tr>
+<tr> <th> TTS </th> <td> <a href="PaddleHub/text_to_speech">example</a> </td> <td> </td> <td> </td>  <td> </td> </tr>
+<tr> <th> STT </th> <td>  </td> <td> </td> <td> </td>  <td> </td> </tr>
 </table>

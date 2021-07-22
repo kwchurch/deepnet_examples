@@ -1,0 +1,2 @@
+Simple as this proposition is, it is necessary to be stated.
+Parakeet stands for Paddle PARAllel text-to-speech toolkit.
