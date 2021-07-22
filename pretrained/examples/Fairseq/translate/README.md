@@ -1,4 +1,4 @@
-# translate
+# Application: MT (Machine Translation), based on Fairseq
 
 Super-simple example of pre-trained translation models from <a href="https://github.com/pytorch/fairseq/blob/master/examples/translation/README.md">fairseq</a>
 

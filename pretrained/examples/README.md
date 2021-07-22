@@ -29,5 +29,5 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 <tr> <th> Sentiment </th> <td> <a href="PaddleHub/sentiment">example</a> <td> </td> </td> <td> <a href="HuggingFaceHub/sentiment">example</a>  </td> <td> </td> </tr>
 <tr> <th> NER </th> <td> </td> <td> </td><td> <a href="HuggingFaceHub/ner">example</a> </td>  </tr>
 <tr> <th> QA </th> <td> </td> <td> <a href="PaddleNLP/question_answering">example</a> <td> <a href="HuggingFaceHub/question_answering">example</a> </td> </td> <td> </td> </tr>
-<tr> <th> MT </th> <td> </td> <td> </td> <td> <a href="HuggingFaceHub/translate">example</a> </td>  <td> <a href="Fairseq/translate">example</a> </td> </tr>
+<tr> <th> MT </th> <td> <a href="PaddleHub/translate">example</a> </td> <td> </td> <td> <a href="HuggingFaceHub/translate">example</a> </td>  <td> <a href="Fairseq/translate">example</a> </td> </tr>
 </table>
