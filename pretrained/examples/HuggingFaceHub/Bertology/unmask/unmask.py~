@@ -1,0 +1,9 @@
+from transformers import pipeline
+import sys
+
+unmasker = pipeline('fill-mask', model='bert-base-uncased')
+
+for line in sys.stdin:
+    rline = line.rstrip()
+    candidates = ['%s:%0.2f' % (candidate['token_str'], candidate['score']) for candidate in unmasker(rline)]
+    print(rline + '\nt' + '\n\t'.join(candidates))

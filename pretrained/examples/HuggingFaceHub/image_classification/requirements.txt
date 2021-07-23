@@ -1,5 +1,0 @@
-transformers
-Pillow
-requests
-
-

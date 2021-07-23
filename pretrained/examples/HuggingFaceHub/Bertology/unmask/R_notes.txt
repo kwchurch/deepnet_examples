@@ -1,0 +1,82 @@
+
+x = read.table("wikitext-103-raw-v1.test.unmasked.forR", header=T)
+
+# A calibration study compares predicted values (scores from BERT) with
+# Pr(correct), the chance that the predicted word is the same as the word that was masked out.
+# Note that most points are well below the dashed red line, indicating that the scores from BERT
+# are often too high.
+
+pdf("calibration.pdf")
+par(ps=16)
+plot(seq(0,1,0.01), sapply(split(x$correct, round(x$score, 2)), mean), xlab="score", ylab="Pr(correct)")
+abline(0,1, lwd=3, lty=3, col="red")
+dev.off()
+
+# Show that there is a relationship between freq of a word in the training set
+# and score from BERT on test set
+
+pdf("score_depends_on_freq.pdf", pointsize=16)
+boxplot(split(x$score, 10^round(log10(1+x$freq))), las=2, xlab="1 + freq of word in train", ylab="score", main="score depends on freq")
+dev.off()
+
+# Logistic regression can be used for calibration
+# In this case, we are fitting correct as a function of two variables: (1) score from BERT, and (2) freq of word in training set
+# The coefficients are all significant, indicating that both of these variables are useful.
+
+g = glm(correct ~ score + log(1+freq), data=x, family=binomial)
+
+summary(g)
+
+# Call:
+# glm(formula = correct ~ score + log(1 + freq), family = binomial, 
+#     data = x)
+
+# Deviance Residuals: 
+#     Min       1Q   Median       3Q      Max  
+# -2.4809  -0.5538   0.3434   0.5799   2.7394  
+
+# Coefficients:
+#                Estimate Std. Error z value Pr(>|z|)    
+# (Intercept)   -4.913398   0.023072  -213.0   <2e-16 ***
+# score          4.351443   0.021521   202.2   <2e-16 ***
+# log(1 + freq)  0.229129   0.001938   118.2   <2e-16 ***
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+# (Dispersion parameter for binomial family taken to be 1)
+
+#     Null deviance: 314944  on 237846  degrees of freedom
+# Residual deviance: 196284  on 237844  degrees of freedom
+# AIC: 196290
+
+# Number of Fisher Scoring iterations: 5
+
+# The ANOVA also suggests that both variables are usefl
+anova(g)
+# Analysis of Deviance Table
+
+# Model: binomial, link: logit
+
+# Response: correct
+
+# Terms added sequentially (first to last)
+
+
+#               Df Deviance Resid. Df Resid. Dev
+# NULL                         237846     314944
+# score          1   103517    237845     211427
+# log(1 + freq)  1    15143    237844     196284
+
+
+# The blue stars are based on the regression analysis above.
+# Note that the blue stars are closer to the dashed red line, suggesting that it ought to be possible
+# to do better than BERT in producing well-calibrated scores.
+# This is just a feasibility study since we should use the validation set for calibration, but
+# the regression is simple enough that one would not expect that to matter too much.
+
+pdf("calibration2.pdf")
+par(ps=16)
+plot(seq(0,1,0.01), sapply(split(x$correct, round(x$score, 2)), mean), xlab="score", ylab="Pr(correct)")
+abline(0,1, lwd=3, lty=3, col="red")
+points(sapply(split(g$fitted.values, round(g$fitted.values,2)), mean), sapply(split(x$correct, round(g$fitted.values,2)), mean), pch='*', col="blue")
+dev.off()
