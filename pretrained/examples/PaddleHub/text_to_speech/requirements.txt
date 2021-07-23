@@ -1,3 +1,4 @@
+paddlepaddle>=2.0.0
 soundfile
 paddlehub
 scipy
@@ -6,3 +7,4 @@ setuptools
 wheel
 ruamel.yaml
 librosa
+paddle-parakeet
