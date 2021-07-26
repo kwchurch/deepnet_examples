@@ -32,6 +32,6 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 <tr> <th> NER </th> <td> </td> <td> </td><td> <a href="HuggingFaceHub/inference/ner">example</a> </td>  </tr>
 <tr> <th> QA </th> <td> </td> <td> <a href="PaddleNLP/question_answering">example</a> <td> <a href="HuggingFaceHub/inference/question_answering">example</a> </td> </td> <td> </td> </tr>
 <tr> <th> MT </th> <td> <a href="PaddleHub/translate">example</a> </td> <td> </td> <td> <a href="HuggingFaceHub/inference/translate">example</a> </td>  <td> <a href="Fairseq/translate">example</a> </td> </tr>
-<tr> <th> TTS </th> <td> <a href="PaddleHub/text_to_speech">example</a> </td> <td> </td> <a href="HuggingFaceHub/inference/text_to_speech">example</a> <td> </td>  <td> </td> </tr>
+<tr> <th> TTS </th> <td> <a href="PaddleHub/text_to_speech">example</a> </td> <td> </td> <td> <a href="HuggingFaceHub/inference/text_to_speech">example</a>  </td>  <td> </td> </tr>
 <tr> <th> STT </th> <td>  </td> <td> </td> <td> <a href="HuggingFaceHub/inference/speech_to_text">example</a> </td>  <td> </td> </tr>
 </table>

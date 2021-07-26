@@ -1,3 +1,9 @@
+# based on https://github.com/jessevig/bertviz
+
+# look at /mnt/scratch/kwc/word2vec/random_classes/BERT_similarity_reorder.py
+# and /mnt/scratch/kwc/word2vec/random_classes/ernie/encoder_kwc.py
+# and https://mccormickml.com/2019/05/14/BERT-word-embeddings-tutorial/
+
 import os,torch,sys,argparse,scipy
 from bertviz.transformers_neuron_view import BertModel, BertTokenizer
 import numpy as np

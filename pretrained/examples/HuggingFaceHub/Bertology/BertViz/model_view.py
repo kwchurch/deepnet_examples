@@ -1,7 +1,10 @@
 
-from bertviz import head_view
+# based on https://github.com/jessevig/bertviz
+
+from bertviz import model_view
 from transformers import BertTokenizer, BertModel
 
+# Load attention weights
 model_version = 'bert-base-uncased'
 do_lower_case = True
 model = BertModel.from_pretrained(model_version, output_attentions=True)
@@ -15,4 +18,4 @@ attention = model(input_ids, token_type_ids=token_type_ids)[-1]
 input_id_list = input_ids[0].tolist() # Batch index 0
 tokens = tokenizer.convert_ids_to_tokens(input_id_list)
 
-head_view(attention, tokens)
+model_view(attention, tokens)
