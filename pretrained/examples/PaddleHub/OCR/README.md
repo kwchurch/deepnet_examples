@@ -10,11 +10,13 @@ Install:
    ```pip install -r requirements.txt```
 
 Example of Usage:
-   ```python add_boxes_to_images.py Sample_input_for_OCR.png > Sample_input_for_OCR.txt```
+   ```shell
+   echo 'Sample_input_for_OCR.png' | python add_boxes_to_images.py > Sample_input_for_OCR.txt
+```
 
-Input: images (bitmaps) on command line such as <a href="Sample_input_for_OCR.png">this</a>.
+Input: images (bitmaps) on stdin such as <a href="Sample_input_for_OCR.png">this</a>.
 
-Outputs for each image on command line:
+Outputs for each input image:
 <ol>
 <li>text with boxes such as <a href="Sample_input_for_OCR.txt">this</a>.</li>
 <li>image with boxes such as <a href="Sample_input_for_OCR.with_boxes.png">this</a>.</li>
