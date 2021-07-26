@@ -2,3 +2,4 @@ tqdm
 transformers
 datasets
 torch
+numpy

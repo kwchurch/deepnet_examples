@@ -1,0 +1,84 @@
+import os,torch,sys,argparse,scipy
+from bertviz.transformers_neuron_view import BertModel, BertTokenizer
+import numpy as np
+from scipy.cluster.hierarchy import linkage,leaves_list,to_tree,optimal_leaf_ordering
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import normalize
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-L", "--max_length", type=int, help='max_length [defaults to 510]', default=510)
+parser.add_argument("-m", "--model_string", help='defaults to bert-base-uncased', default='bert-base-uncased')
+args = parser.parse_args()
+
+model_version = 'bert-base-uncased'
+model = BertModel.from_pretrained(model_version)
+tokenizer = BertTokenizer.from_pretrained(model_version)
+
+def truncate_tokens(tokens, T):
+    if len(tokens) < T:
+        return tokens
+    else:
+        return tokens[0:T]
+
+def get_attention(model, tokenizer, input):
+    tokens = [tokenizer.cls_token] + truncate_tokens(tokenizer.tokenize(input), args.max_length) + [tokenizer.sep_token]
+    token_ids = tokenizer.convert_tokens_to_ids(tokens)
+    token_type_ids = torch.LongTensor([[0] * len(tokens)])
+    tokens_tensor = torch.tensor(token_ids).unsqueeze(0)
+    output = model(tokens_tensor, token_type_ids=token_type_ids)
+    attn = output[-1]
+    return tokens,attn
+
+def attn_shape(attn):
+    nlayers = len(attn)
+    nheads = attn[0]['attn'].shape[1]
+    ntokens = attn[0]['attn'].shape[2]
+    return nlayers,nheads,ntokens
+
+def reorder(tokens,attn,layer,head):
+    z = attn[layer]['attn'][0,head,:,:].detach().numpy()
+    dendrogram = scipy.cluster.hierarchy.linkage(z.T, method='complete', metric='cosine', optimal_ordering=True) 
+    leaves = leaves_list(dendrogram)
+    N = z.shape[0]
+    scores = [z[leaves[i-1], leaves[i]] for i in range(1,len(leaves))]
+    words = [tokens[j] for j in leaves] 
+    return words,scores,leaves
+
+def visualize_reordering(tokens,attn,layer,head,axs):
+    axs[layer][head].
+    z = attn[layer]['attn'][0,head,:,:].detach().numpy()
+    dendrogram = scipy.cluster.hierarchy.linkage(z.T, method='complete', metric='cosine', optimal_ordering=True) 
+
+    leaves = leaves_list(dendrogram)
+    words,scores,leaves = reorder(tokens,attn,layer,head)
+
+    vectors = encoded_layers[layer][0]
+    nvectors = normalize(np.array(vectors))
+
+    sim=nvectors @ nvectors.T
+    sim2=sim[leaves,:][:,leaves]
+
+    axs[layer][head].imshow(sim2)
+
+def visualize_all_reorderings(tokens,attn):
+    L,H,N = attn_shape(attn)
+    fig,axs = plt.subplots(L,H)
+    for l in range(L):
+        for h in range(H):
+            visualize_reordering(tokens,attn,layer,head,axs)
+    plt.show()
+
+def all_reorderings(tokens,attn):
+    L,H,N = attn_shape(attn)
+    print ('-1\t-1\t%s' % (' '.join(tokens)))
+    print('layer\tattention_head\treorderd')
+    for l in range(L):
+        for h in range(H):
+            words,scores,leaves = reorder(tokens, attn, l, h)
+            print ('%d\t%d\t%s' % (l, h, ' '.join(words)))
+
+for line in sys.stdin:
+    cline = line.rstrip()
+    tokens,attn = get_attention(model, tokenizer, cline)
+    all_reorderings(tokens,attn)
+    

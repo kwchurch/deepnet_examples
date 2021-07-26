@@ -1,0 +1,24 @@
+import numpy as np
+import gensim.downloader,sys,argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-l", "--list", type=int, help='list available models', default=0)
+parser.add_argument("-m", "--model_string", help='defaults to word2vec-google-news-300', default='word2vec-google-news-300')
+parser.add_argument("-K", "--top_k", type=int, help='number of candidates to output [default to 5]', default=5)
+args = parser.parse_args()
+
+if args.list != 0:
+    print('\n'.join(gensim.downloader.info()['models'].keys()))
+    sys.exit()
+
+M = gensim.downloader.load(args.model_string)
+
+for line in sys.stdin:
+    words = line.rstrip().split()
+    if len(words) > 0:
+        try: 
+            candidates = M.most_similar(words, topn=args.top_k)
+            candidates_string = ', '.join('%s:%0.2f' % (candidate[0], candidate[1]) for candidate in candidates)
+            print(line.rstrip() + '\t' + candidates_string)
+        except:
+            print(line.rstrip() + '\t*** ERROR ***')

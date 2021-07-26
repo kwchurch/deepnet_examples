@@ -1,0 +1,8 @@
+python-Levenshtein
+gensim
+transformers
+argparse
+bertviz
+matplotlib
+sklearn
+scipy

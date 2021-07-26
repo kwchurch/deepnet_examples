@@ -2,33 +2,63 @@
 
 Simple program to load datasets based on <a href="https://huggingface.co/datasets">datasets in HuggingFace</a>
 
+The standard HuggingFaceHub interface to datasets requires the user
+to know quite a bit about how each dataset is organized: 
+
+<ol>
+<li>names of splits,</li>
+<li>dataset configuations,</li> 
+<li>and json data structures</li>
+</ol>
+
+To make it easier for users to figure this out, there is a database
+explorer link for each dataset. For example:
+
+<ol>
+<li><a href="https://huggingface.co/datasets/bookcorpus">bookcorpus</a></li>
+<li><a href="https://huggingface.co/datasets/wikitext">wikitext</a></li>
+</ol>
+
+But we would prefer to avoid the need to special case each datasets,
+since there are already quite a few datasets (more than 1k), and we
+expect there will be more in the future.
+
+Thus, we provide a standard 
+To make it easier for users, the following provides a standard
+interface to most datasets.  
+
+Each record in the dataset is output on stdout with a prefix that
+specifies config and split
+
+Under this design, interference models all read input from stdin and output to stdout:
+```shell 
+    python cat_datasets.py <args> | python inference.py <args>
+```
+
+
 ```shell 
   pip install -r requirements.txt
   # download dataset and output as text files to text/ptb_text_only
-  python dataset_to_text.py -d ptb_text_only -o text/ptb_text_only*
-  # list datasets
-  python dataset_to_text.py -l 1
 
-  # a few datasets such as xglue and wikitext require a config argument
-  mkdir -p text/xglue
-  for config in mlqa nc ner ntg  paws-x pos qadsm qam qg wpr xnli
-    do
-    python dataset_to_text.py -d xglue -o text/xglue/$config --config $config
-    done
+  #  List all datasets
+  #    python cat_dataset.py --list 1
 
-  mkdir -p text/wikitext
-  for config in wikitext-103-raw-v1 wikitext-103-v1 wikitext-2-raw-v1 wikitext-2-v1
-    do
-    python dataset_to_text.py -d wikitext -o text/wikitext/$config --config $config
-    done
+  # Output book corpors on stdout
+  #    python cat_dataset.py --dataset bookcorpus
+
+  # Output wikitext-2-raw-v1 test set on stdout
+  #    python cat_dataset.py --dataset wikitext --dataset_config wikitext-2-raw-v1 --split test
+
+  # see dataset_config.txt for a list of datasets that require --dataset_config arguments
+  # The first field on each line is a dataset
+  # The following fields specify dataset configurations for that dataset.
 ```
 
-Some datasets may not load, or may require special options to load.
-The code in this directory was tested on the following datasets.
+Some datasets may not load.  Cat_dataset was tested on the following datasets.
 <ul>
 <li>&#128512; indicates success,</li>
 <li>&#128721; indicates failure, and</li>
-<li> &#9888; is a warning that a --config argument is required; see config.txt for config arguments for a number of datasets.</li>
+<li> &#9888; is a warning that a --dataset_config argument is required for this dataset</li>
 </ul>
 
 <ol>

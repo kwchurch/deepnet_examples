@@ -8,6 +8,6 @@ Simple program to load datasets based on <a href="https://github.com/PaddlePaddl
   for d in ptb cola sst-2 mrpc sts-b qqp mnli qnli rte wnli lcqmc chnsenticorp squad dureader_yesno cmrc2018 drcd msra_ner peoples_daily_ner iwslt15 wmt14ende poetry couplet yahoo_answer_100k
   do
   echo $d
-  python dataset_to_text.py -d $d -o text/$d
+  python cat_dataset.py --dataset $d
   done
 ```
