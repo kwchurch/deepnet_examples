@@ -3,10 +3,11 @@ import numpy as np
 from scipy.cluster.hierarchy import linkage,leaves_list,to_tree,optimal_leaf_ordering
 import matplotlib.pyplot as plt
 from sklearn.metrics.pairwise import cosine_similarity
+from gensim.models import KeyedVectors
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", "--list", type=int, help='list available models', default=0)
-parser.add_argument("-m", "--model_string", help='defaults to glove-wiki-gigaword-100', default='glove-wiki-gigaword-100')
+parser.add_argument("-m", "--model_string", help='defaults to glove-wiki-gigaword-100 (faster when model_string ends with .annoy)', default='glove-wiki-gigaword-100')
 parser.add_argument("-K", "--top_k", type=int, help='number of candidates to output [default to 5]', default=5)
 args = parser.parse_args()
 
@@ -14,7 +15,10 @@ if args.list != 0:
     print('\n'.join(gensim.downloader.info()['models'].keys()))
     sys.exit()
 
-M = gensim.downloader.load(args.model_string)
+if args.model_string.endswith('.annoy'):
+    M = KeyedVectors.load(args.model_string,  mmap='r')
+else:
+    M = gensim.downloader.load(args.model_string)
 
 def do_ticks(ax, labs):
     ax.set_xticks(np.arange(len(labs)))

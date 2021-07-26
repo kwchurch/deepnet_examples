@@ -1,5 +1,6 @@
 import numpy as np
 import gensim.downloader,sys,argparse
+from gensim.models import KeyedVectors
 
 # Input from stdin: One word per line
 # Output to stdout: The input word, followd by top_k candidates with scores
@@ -44,7 +45,7 @@ import gensim.downloader,sys,argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", "--list", type=int, help='list available models', default=0)
-parser.add_argument("-m", "--model_string", help='defaults to glove-wiki-gigaword-100', default='glove-wiki-gigaword-100')
+parser.add_argument("-m", "--model_string", help='defaults to glove-wiki-gigaword-100 (faster when model_string ends with .annoy)', default='glove-wiki-gigaword-100')
 parser.add_argument("-K", "--top_k", type=int, help='number of candidates to output [default to 5]', default=5)
 args = parser.parse_args()
 
@@ -52,7 +53,10 @@ if args.list != 0:
     print('\n'.join(gensim.downloader.info()['models'].keys()))
     sys.exit()
 
-M = gensim.downloader.load(args.model_string)
+if args.model_string.endswith('.annoy'):
+    M = KeyedVectors.load(args.model_string,  mmap='r')
+else:
+    M = gensim.downloader.load(args.model_string)
 
 for line in sys.stdin:
     words = line.rstrip().split()
