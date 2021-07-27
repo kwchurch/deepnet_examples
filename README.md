@@ -4,11 +4,11 @@ Kenneth Church
 <p>
 
 Please feel free to send me email: <a
-href="mailto:kenneth.ward.church@gmail.com?subject="Deep Nets for
-Poets">here</a>.  I would appreciate feedback on the examples posted
-here, as well as contributions with more examples and more solutions
-that would help users appreciate why they should be as excited about
-deep nets as we are.
+href="mailto:kenneth.ward.church@gmail.com?subject=Deep_Nets_for_Poets">here</a>.
+I would appreciate feedback on the examples posted here, as well as
+contributions with more examples and more solutions that would help
+users appreciate why they should be as excited about deep nets as we
+are.
 
 <p>
 Many years ago, well before the web, I gave some lectures at a
