@@ -2,9 +2,9 @@
 
 Kenneth Church
 <p>
-<a href="mailto:kenneth.ward.church@gmail.com?subject="Deep Nets for Poets">email</a>
+Please feel free to send me email: <a href="mailto:kenneth.ward.church@gmail.com?subject="Deep Nets for Poets">here</a>.
 
-
+<p>
 Many years ago, well before the web, I gave some lectures at a
 Lingusitics Summer School on
 
@@ -15,14 +15,14 @@ do with lexical resources and corpora (superhighway roadkill such as
 email, bboards, faxes).
 
 <ul>
-<li> Q: What can we do with it all?</li>
-<li> A: It is better to do something simple than nothing at all</li>
+<li> Question: What can we do with it all?</li>
+<li> Answer: It is better to do something simple than nothing at all</li>
 </ul>
 
-The lecture argued that poets (users such as linguists,
+These lectures argued that poets (users such as linguists,
 lexicographers, translators) can do simple things themselves.
 Moreover, DIY (do it yourself) is more satisfying than begging for
-``help'' from a system admin.
+"help" from a system admin.
 
 <p>
 
@@ -30,7 +30,6 @@ In ``Deep Nets for Poets,'' I want to make a similar argument,
 but for deep nets (as opposed to Unix).  In particular, there are simple
 examples in subdirectories below this that show
 
-<ol>
 <ol>
 <li>Image Classification: Pictures &#8594; Labels </li>
 <li>OCR (Optical Character Recognition): Pictures &#8594; text (English and Chinese)</li>
@@ -58,7 +57,7 @@ elsewhere.
 <p>
 
 <ol>
-<li> Click <a href="datasets">here</a> for examples of loading datasets from two sources, PaddleNLP and HuggingFace.</li>
+<li> Click <a href="datasets">here</a> for examples of loading datasets from several sources, including PaddleNLP and HuggingFaceHub.</li>
 <li> Click <a href="pretrained/examples">here</a> for examples of pretrained models for several applications from several sources.</li>
 </ol>
 
