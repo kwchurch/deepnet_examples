@@ -1,6 +1,13 @@
 # Deep Nets for Poets
 
-Many years ago, I gave some lectures at a Lingusitics Summer School on
+Kenneth Church
+<p>
+<a href="mailto:kenneth.ward.church@gmail.com?subject="Deep Nets for Poets">email</a>
+
+
+Many years ago, well before the web, I gave some lectures at a
+Lingusitics Summer School on
+
 <a
 href="https://web.stanford.edu/class/cs124/kwc-unix-for-poets.pdf">Unix
 for Poets</a>.  At the time, we were really excited by what we could
