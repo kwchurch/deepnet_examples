@@ -1,6 +1,6 @@
 # Application: Q&A (Question Answering), based on PaddleNLP
 
-Very simple programs to use pretrained SQuAD models from on https://huggingface.co/transformers
+Very simple programs to use pretrained SQuAD models based on https://huggingface.co/transformers
 
 ```shell 
   pip install -r requirements.txt

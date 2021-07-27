@@ -7,11 +7,13 @@ home</a> for many more pre-trained models.
 
 
 Install:
-   ```pip install -r requirements.txt```
+   ```shell
+   pip install -r requirements.txt
+```
 
 Example of Usage:
    ```shell
-   echo 'Sample_input_for_OCR.png' | python add_boxes_to_images.py > Sample_input_for_OCR.txt
+   echo 'Sample_input_for_OCR.png' | python OCR.py
 ```
 
 Input: images (bitmaps) on stdin such as <a href="Sample_input_for_OCR.png">this</a>.

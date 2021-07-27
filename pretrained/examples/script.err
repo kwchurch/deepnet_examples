@@ -1,0 +1,55 @@
+python: can't open file 'HuggingFaceHub/inference/image_classification/OCR.py': [Errno 2] No such file or directory
+[33m[2021-07-26 16:06:19,140] [ WARNING][0m - The _initialize method in HubModule will soon be deprecated, you can use the __init__() to handle the initialization of the object[0m
+E0726 16:06:19.151492 33800 analysis_config.cc:81] Please compile with gpu to EnableGpu()
+W0726 16:06:19.151551 33800 analysis_predictor.cc:1183] Deprecated. Please use CreatePredictor instead.
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+E0726 16:06:19.525507 33800 analysis_config.cc:81] Please compile with gpu to EnableGpu()
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[33m[2021-07-26 16:06:19,737] [ WARNING][0m - The _initialize method in HubModule will soon be deprecated, you can use the __init__() to handle the initialization of the object[0m
+E0726 16:06:19.737334 33800 analysis_config.cc:81] Please compile with gpu to EnableGpu()
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[33m[2021-07-26 16:06:46,172] [ WARNING][0m - The _initialize method in HubModule will soon be deprecated, you can use the __init__() to handle the initialization of the object[0m
+W0726 16:06:47.335808 33924 analysis_predictor.cc:1183] Deprecated. Please use CreatePredictor instead.
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+E0726 16:06:47.855376 33924 analysis_config.cc:81] Please compile with gpu to EnableGpu()
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[33m[2021-07-26 16:06:48,312] [ WARNING][0m - The _initialize method in HubModule will soon be deprecated, you can use the __init__() to handle the initialization of the object[0m
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+E0726 16:06:48.369854 33924 analysis_config.cc:81] Please compile with gpu to EnableGpu()
+[37m---    Fused 0 subgraphs into layer_norm op.[0m
+[32m[2021-07-26 16:07:12,749] [    INFO][0m - Already cached /mnt/home/kwc/.paddlenlp/models/ernie-2.0-en-finetuned-squad/ernie_v2_eng_base_finetuned_squad.pdparams[0m
+[32m[2021-07-26 16:07:24,224] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-2.0-en-finetuned-squad/vocab.txt[0m
+/mnt/home/kwc/venv/my_test/lib/python3.6/site-packages/transformers/models/auto/modeling_auto.py:902: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  FutureWarning,
+/mnt/home/kwc/venv/my_test/lib/python3.6/site-packages/transformers/models/auto/modeling_auto.py:902: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  FutureWarning,
+cat: sample_Chinese_input.txt: No such file or directory
+/mnt/home/kwc/venv/my_test/lib/python3.6/site-packages/transformers/models/auto/modeling_auto.py:902: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  FutureWarning,
+/mnt/home/kwc/venv/my_test/lib/python3.6/site-packages/transformers/models/auto/modeling_auto.py:902: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  FutureWarning,
+Using cache found in /mnt/home/kwc/.cache/torch/hub/pytorch_fairseq_master
+Traceback (most recent call last):
+  File "Fairseq/translate/translate.py", line 29, in <module>
+    if not model_string in tested_model_strings:
+NameError: name 'model_string' is not defined
+Using cache found in /mnt/home/kwc/.cache/torch/hub/pytorch_fairseq_master
+Traceback (most recent call last):
+  File "Fairseq/translate/translate.py", line 29, in <module>
+    if not model_string in tested_model_strings:
+NameError: name 'model_string' is not defined
+Using cache found in /mnt/home/kwc/.cache/torch/hub/pytorch_fairseq_master
+Traceback (most recent call last):
+  File "Fairseq/translate/translate.py", line 29, in <module>
+    if not model_string in tested_model_strings:
+NameError: name 'model_string' is not defined
+Using cache found in /mnt/home/kwc/.cache/torch/hub/pytorch_fairseq_master
+Traceback (most recent call last):
+  File "Fairseq/translate/translate.py", line 29, in <module>
+    if not model_string in tested_model_strings:
+NameError: name 'model_string' is not defined
+Using cache found in /mnt/home/kwc/.cache/torch/hub/pytorch_fairseq_master
+Traceback (most recent call last):
+  File "Fairseq/translate/translate.py", line 29, in <module>
+    if not model_string in tested_model_strings:
+NameError: name 'model_string' is not defined
