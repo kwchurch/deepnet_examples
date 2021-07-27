@@ -11,12 +11,11 @@ users appreciate why they should be as excited about deep nets as we
 are.
 
 <p>
-Many years ago, well before the web, I gave some lectures at a
-Lingusitics Summer School on
-
+Many years ago, well before the web, I gave some lectures called
 <a
 href="https://web.stanford.edu/class/cs124/kwc-unix-for-poets.pdf">Unix
-for Poets</a>.  At the time, we were really excited by what we could
+for Poets</a> at
+a Lingusitics Summer School.  At the time, we were really excited by what we could
 do with lexical resources and corpora (superhighway roadkill such as
 email, bboards, faxes).
 
