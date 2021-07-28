@@ -11,7 +11,7 @@ args = parser.parse_args()
 import sys
 import paddlehub as hub
 
-model = hub.Module(name='transformer_zh-en', beam_size=5)
+model = hub.Module(name=args.model_string, beam_size=5)
 src_texts = sys.stdin.read().split('\n')
 
 n_best = 3  # 每个输入样本的输出候选句子数量

@@ -15,7 +15,7 @@ Many years ago, well before the web, I gave some lectures called
 <a
 href="https://web.stanford.edu/class/cs124/kwc-unix-for-poets.pdf">Unix
 for Poets</a> at
-a Lingusitics Summer School.  At the time, we were really excited by what we could
+a Linguistics Summer School.  At the time, we were really excited by what we could
 do with lexical resources and corpora (superhighway roadkill such as
 email, bboards, faxes).
 
@@ -69,3 +69,8 @@ elsewhere.
 
 Warning, there may be some intermittent timeouts while loading big
 objects from far away.  If you run into a timeout, please try again.
+
+
+Most of our examples are based on
+a number of hubs such as PaddleHub and HuggingFaceHub.  ML Commons is working
+on an alternative approach called <a href="https://github.com/mlcommons/mlcube">mlcube</a>.
