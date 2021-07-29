@@ -55,7 +55,7 @@ This file created by <a href="https://github.com/kwchurch/deepnet_examples/tree/
 We used unmask.py to produce wikitext-103-raw-v1.test.unmasked
 
 ```shell 
-  # Warning, this will take a long time; we ran this in parallel on a cluster
+  # Warning, this will take a long time; we actually ran this in parallel on a cluster
   python unmask.py < wikitext-103-raw-v1.test > wikitext-103-raw-v1.test.unmasked
   ```
 
@@ -66,6 +66,7 @@ by counting unigram frequencies from the training set (though we did not post th
    cut -f2- -d'|' < wikitext-103-raw-v1.train | 
    awk '{for(i=1;i<=NF;i++) x[tolower($i)]++}; 
    END {for(i in x) print x[i] "\t" i}' > hist.txt
+```
 
 We combined hist.txt and wikitext-103-raw-v1.test.unmasked to create
 wikitext-103-raw-v1.test.unmasked.forR.
