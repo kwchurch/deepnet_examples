@@ -32,12 +32,12 @@ the scores could be interpreted as probabilities, but if that was
 correct, the points would fall on the dashed red line (the y=x line).
 We estimate Pr(correct) by binning a number of output rows from unmask.py.
 Each row is counted as correct iff the word in the first column matches
-the word in the second column.  Correct is a boolean value.
+the word in the second column.  Correct is a boolean value.  Pr(correct)
+is the average of correct within a bin.  Rows are binned by score (101 bins from 0 to to 1 by 0.01).
 
 <p>
 
-Rows are binned by score (101 bins from 0 to to 1 by 0.01).
-Pr(correct) is the average of the correct values within each bin.  We
+We
 believe that the points are below the dashed red line because scores
 are computed using a softmax that compared the candidate to the sum of
 all candidates that were considered.  The ratio is overconfident
