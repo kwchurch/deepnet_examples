@@ -31,9 +31,9 @@ Moreover, DIY (do it yourself) is more satisfying than begging for
 
 <p>
 
-In ``Deep Nets for Poets,'' I want to make a similar argument,
+In <i>Deep Nets for Poets</i>, I want to make a similar argument,
 but for deep nets (as opposed to Unix).  In particular, there are simple
-examples in subdirectories below this that show
+examples in subdirectories below this that show:
 
 <ol>
 <li>Image Classification: Pictures &#8594; Labels </li>

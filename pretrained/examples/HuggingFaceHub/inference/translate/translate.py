@@ -11,8 +11,8 @@ from transformers import AutoModelWithLMHead, AutoTokenizer
 #   python translate.py --source_language zh --target_language en
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-s", "--source_language", help="defaults to en", required=True)
-parser.add_argument("-t", "--target_language", help="defaults to de", required=True)
+parser.add_argument("-s", "--source_language", help="two letter language code such as en, de, zh, etc.", required=True)
+parser.add_argument("-t", "--target_language", help="two letter language code such as en, de, zh, etc.", required=True)
 args = parser.parse_args()
 
 # HuggingFace pipelines support a few language pairs

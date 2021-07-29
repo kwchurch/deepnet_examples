@@ -6,7 +6,12 @@ import sys,argparse,datasets
 #  List all datasets
 #    python cat_dataset.py --list 1
 
+# Output Penn Treebank on stdout
+# Warning, most of the content words have been replaced with <unk>
+#    python cat_dataset.py -d ptb_text_only
+
 # Output book corpors on stdout
+# Warning, this will take a long time to download (and the output will be large)
 #    python cat_dataset.py --dataset bookcorpus
 
 # Output wikitext-2-raw-v1 test set on stdout
@@ -27,7 +32,7 @@ import sys,argparse,datasets
 # Each record in the dataset is output on stdout with a prefix that
 # specifies config and split
 
-# Under this design, interference models all read input from stdin and output to stdout:
+# Under this design, one can used Unix pipes to combine datasetswith inference models
 #     python cat_datasets.py <args> | python inference.py <args>
 
 parser = argparse.ArgumentParser()
@@ -56,7 +61,7 @@ def data_output_by_tokens(prefix, split, d):
             print(prefix + ' '.join(sent['tokens']))
 
 def data_output(split, d):
-    prefix = str(args.dataset_config) + '\t' + str(split) + '\t'
+    prefix = str(args.dataset) + '\t' + str(args.dataset_config) + '\t' + str(split) + '\t'
     if len(d) > 0 and 'tokens' in d[0]:
         data_output_by_tokens(prefix, split, d)
     else:

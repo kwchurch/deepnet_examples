@@ -5,11 +5,18 @@ import fairseq,torch,sys,argparse
 # Usage: python translate.py -m 'transformer_zh-en' < sample_Chinese_input.txt
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-m", "--model_string", help="transformer_zh-en|transformer_en-de", required=True)
+parser.add_argument("-m", "--model_string", help="currently supports just two possibilities: transformer_zh-en|transformer_en-de", default=None)
+parser.add_argument("-s", "--source_language", help="two letter language code such as en, de, zh, etc.", default=None)
+parser.add_argument("-t", "--target_language", help="two letter language code such as en, de, zh, etc.", default=None)
 args = parser.parse_args()
 
 import sys
 import paddlehub as hub
+
+if args.model_string is None:
+    args.model_string = 'transformer_' + args.source_language + '-' + args.target_language
+
+print('model_string: ' + str(args.model_string))
 
 model = hub.Module(name=args.model_string, beam_size=5)
 src_texts = sys.stdin.read().split('\n')
