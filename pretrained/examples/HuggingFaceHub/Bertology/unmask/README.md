@@ -82,7 +82,7 @@ directory from wikitext-103-raw-v1.test.unmasked.forR.  The blue stars
 are computed using logistic regression, an alternative calibration
 method to binning.  The regression makes use of two input variables:
 (1) score as (2) unigram frequencies.  There is a well-known
-freequency effect in psycholinguistics, where humans tend to perform a
+frequency effect in psycholinguistics, where humans tend to perform a
 number of tasks faster (and more accurately) for more frequent words.
 The regresssions show that Pr(correct) not only depends on score but
 also unigram frequency, suggesting there may be an opportunity to improve
