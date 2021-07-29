@@ -23,10 +23,8 @@
 
 Can we interpret these scores as probabilities?
 
-The plots <a
-href="https://github.com/kwchurch/deepnet_examples/blob/main/pretrained/examples/HuggingFaceHub/Bertology/unmask/calibration.pdf">here</a>
-and <a
-href="https://github.com/kwchurch/deepnet_examples/blob/main/pretrained/examples/HuggingFaceHub/Bertology/unmask/calibration2.pdf">here</a>
+The plots <a href="https://github.com/kwchurch/deepnet_examples/blob/main/pretrained/examples/HuggingFaceHub/Bertology/unmask/calibration.pdf">here</a>
+and <a href="https://github.com/kwchurch/deepnet_examples/blob/main/pretrained/examples/HuggingFaceHub/Bertology/unmask/calibration2.pdf">here</a>
 show that the scores are overconfident (because the black circles are
 below the dashed red line).  <p> The x-axis shows scores and the
 y-axis shows estimates of Pr(correct).  That is, one might hope that
