@@ -24,7 +24,7 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 </ol></li>
 </ol>
 
-<table>
+<table id="shortcuts">
 <tr> <th> </th>      <th> PaddleHub </th>  <th> PaddleNLP </th> <th> HuggingFaceHub </th> <th> Fairseq </th> </tr>
 <tr> <th> Image Classification </th>  <td> <td> </td> </td> <td> <a href="HuggingFaceHub/inference/image_classification">example</a>  </td> <td> </td> </tr>
 <tr> <th> OCR </th>  <td> <a href="PaddleHub/inference/OCR">example</a> <td> </td> </td> <td> </td> <td> </td> </tr>

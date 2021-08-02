@@ -37,7 +37,6 @@ import sys,argparse,datasets
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset", help='see https://huggingface.co/datasets', default=None)
-parser.add_argument("-o", "--output", help='output file [defaults --> dataset]', default=None)
 parser.add_argument("-l", "--list", type=int, help='list datasets', default=0)
 parser.add_argument("-s", "--split", help='Specify only if you do not want to output all splits.', default=None)
 parser.add_argument("-c", "--dataset_config", help='usually not necessary, but required for some datasets such as xglue', default=None)
@@ -74,8 +73,6 @@ def my_load_dataset():
     else: return datasets.load_dataset(args.dataset, args.dataset_config)
 
 if not args.dataset is None:
-    if args.output is None:
-        args.output = args.dataset
     ds = my_load_dataset()
     if args.split is None:
         for split in ds:

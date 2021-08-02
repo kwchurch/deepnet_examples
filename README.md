@@ -10,6 +10,24 @@ contributions with more examples and more solutions that would help
 users appreciate why they should be as excited about deep nets as we
 are.
 
+<h1>Short Cuts</h1>
+
+<table id="shortcuts">
+<tr> <th> </th>      <th> PaddleHub </th>  <th> PaddleNLP </th> <th> HuggingFaceHub </th> <th> Fairseq </th> </tr>
+<tr> <th> Image Classification </th>  <td> <td> </td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/image_classification">example</a>  </td> <td> </td> </tr>
+<tr> <th> OCR </th>  <td> <a href="pretrained/examples/PaddleHub/inference/OCR">example</a> <td> </td> </td> <td> </td> <td> </td> </tr>
+<tr> <th> Sentiment </th> <td> <a href="pretrained/examples/PaddleHub/inference/sentiment">example</a> <td> </td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/sentiment">example</a>  </td> <td> </td> </tr>
+<tr> <th> NER </th> <td> </td> <td> </td><td> <a href="pretrained/examples/HuggingFaceHub/inference/ner">example</a> </td>  </tr>
+<tr> <th> QA </th> <td> </td> <td> <a href="pretrained/examples/PaddleNLP/inferencequestion_answering">example</a> <td> <a href="pretrained/examples/HuggingFaceHub/inference/question_answering">example</a> </td> </td> <td> </td> </tr>
+<tr> <th> MT </th> <td> <a href="pretrained/examples/PaddleHub/inference/translate">example</a> </td> <td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/translate">example</a> </td>  <td> <a href="pretrained/examples/Fairseq/inference/translate">example</a> </td> </tr>
+<tr> <th> TTS </th> <td> <a href="pretrained/examples/PaddleHub/inference/text_to_speech">example</a> </td> <td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/text_to_speech">example</a>  </td>  <td> </td> </tr>
+<tr> <th> STT </th> <td>  </td> <td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/speech_to_text">example</a> </td>  <td> </td> </tr>
+</table>
+
+Click <a href="datasets">here</a> for examples of loading datasets from several sources, including PaddleNLP and HuggingFaceHub.</li>
+
+<h1>Background</h1>
+
 <p>
 Many years ago, well before the web, I gave some lectures called
 <a
@@ -61,15 +79,11 @@ elsewhere.
 
 <p>
 
-<ol>
-<li> Click <a href="datasets">here</a> for examples of loading datasets from several sources, including PaddleNLP and HuggingFaceHub.</li>
-<li> Click <a href="pretrained/examples">here</a> for examples of pretrained models for several applications from several sources.</li>
-</ol>
-
 
 Warning, there may be some intermittent timeouts while loading big
 objects from far away.  If you run into a timeout, please try again.
 
+<p>
 
 Most of our examples are based on
 a number of hubs such as PaddleHub and HuggingFaceHub.  ML Commons is working
