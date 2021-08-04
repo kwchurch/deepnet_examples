@@ -24,7 +24,7 @@ dev.off()
 # The coefficients are all significant, indicating that both of these variables are useful.
 
 g = glm(correct ~ score + log(1+freq), data=x, family=binomial)
-g2 = glm(correct ~ tokens + score + log(1+freq), data=x, family=binomial)
+g2 = glm(correct ~ (tokens > 1) + score + log(1+freq), data=x, family=binomial)
 
 summary(g)
 
