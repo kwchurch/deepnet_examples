@@ -24,6 +24,7 @@ dev.off()
 # The coefficients are all significant, indicating that both of these variables are useful.
 
 g = glm(correct ~ score + log(1+freq), data=x, family=binomial)
+g2 = glm(correct ~ tokens + score + log(1+freq), data=x, family=binomial)
 
 summary(g)
 
@@ -79,4 +80,11 @@ par(ps=16)
 plot(seq(0,1,0.01), sapply(split(x$correct, round(x$score, 2)), mean), xlab="score", ylab="Pr(correct)")
 abline(0,1, lwd=3, lty=3, col="red")
 points(sapply(split(g$fitted.values, round(g$fitted.values,2)), mean), sapply(split(x$correct, round(g$fitted.values,2)), mean), pch='*', col="blue")
+dev.off()
+
+pdf("calibration3.pdf")
+par(ps=16)
+plot(seq(0,1,0.01), sapply(split(x$correct, round(x$score, 2)), mean), xlab="score", ylab="Pr(correct)")
+abline(0,1, lwd=3, lty=3, col="red")
+points(sapply(split(g2$fitted.values, round(g$fitted.values,2)), mean), sapply(split(x$correct, round(g$fitted.values,2)), mean), pch='*', col="blue")
 dev.off()
