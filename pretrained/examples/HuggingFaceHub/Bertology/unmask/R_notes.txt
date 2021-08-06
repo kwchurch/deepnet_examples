@@ -88,3 +88,12 @@ plot(seq(0,1,0.01), sapply(split(x$correct, round(x$score, 2)), mean), xlab="sco
 abline(0,1, lwd=3, lty=3, col="red")
 points(sapply(split(g2$fitted.values, round(g$fitted.values,2)), mean), sapply(split(x$correct, round(g$fitted.values,2)), mean), pch='*', col="blue")
 dev.off()
+
+x = read.table("wikitext-103-raw-v1.test.unmasked.forR", header=T)
+g4 = glm(correct ~ (tokens > 1) + score + poly(log(1+freq), 2), data=x, family=binomial)
+pdf("calibration4.pdf")
+par(ps=16)
+plot(seq(0,1,0.01), sapply(split(x$correct, round(x$score, 2)), mean), xlab="score", ylab="Pr(correct)")
+abline(0,1, lwd=3, lty=3, col="red")
+points(sapply(split(g4$fitted.values, round(g4$fitted.values,2)), mean), sapply(split(x$correct, round(g4$fitted.values,2)), mean), pch='*', col="blue")
+dev.off()
