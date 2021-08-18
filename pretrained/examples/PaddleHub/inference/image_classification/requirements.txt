@@ -1,5 +1,7 @@
 paddlepaddle
-paddlenlp
+paddlehub
 shapely
 pyclipper
 opencv-python
+
+
