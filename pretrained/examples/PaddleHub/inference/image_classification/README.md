@@ -13,7 +13,7 @@ Install:
 
 Example of Usage:
    ```shell
-   find . -name '*.jpg' | python resnet.py
+   find flower_photos -name '*.jpg' | python resnet.py --labels flower_photos/label_list.txt
 ```
 
 Input: images (bitmaps) on stdin such as <a href="flower_photos/daisy/134409839_71069a95d1_m.jpg">this</a>.
