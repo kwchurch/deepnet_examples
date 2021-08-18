@@ -1,0 +1,3 @@
+[33m[2021-08-17 22:43:21,243] [ WARNING][0m - PaddleHub model checkpoint not found, start from scratch...[0m
+[36m[2021-08-17 22:46:18,534] [   TRAIN][0m - Epoch=1/100, Step=10/92 loss=1.2489 acc=0.5875 lr=0.001000 step/sec=0.06 | ETA 45:18:26[0m
+[36m[2021-08-17 22:49:10,182] [   TRAIN][0m - Epoch=1/100, Step=20/92 loss=1.1809 acc=0.5719 lr=0.001000 step/sec=0.06 | ETA 44:35:11[0m
