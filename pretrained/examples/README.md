@@ -26,7 +26,7 @@ There is a README in most subdirectories below.  Each subdirectory should be sel
 
 <table id="shortcuts">
 <tr> <th> </th>      <th> PaddleHub </th>  <th> PaddleNLP </th> <th> HuggingFaceHub </th> <th> Fairseq </th> </tr>
-<tr> <th> Image Classification </th> <a href="PaddleHub/inference/image_classification">example</a> <td> <td> </td> </td> <td> <a href="HuggingFaceHub/inference/image_classification">example</a>  </td> <td> </td> </tr>
+<tr> <th> Image Classification </th>  <td> <a href="PaddleHub/inference/image_classification">example</a> <td> </td> </td> <td> <a href="HuggingFaceHub/inference/image_classification">example</a>  </td> <td> </td> </tr>
 <tr> <th> OCR </th>  <td> <a href="PaddleHub/inference/OCR">example</a> <td> </td> </td> <td> </td> <td> </td> </tr>
 <tr> <th> Sentiment </th> <td> <a href="PaddleHub/inference/sentiment">example</a> <td> </td> </td> <td> <a href="HuggingFaceHub/inference/sentiment">example</a>  </td> <td> </td> </tr>
 <tr> <th> NER </th> <td> </td> <td> </td><td> <a href="HuggingFaceHub/inference/ner">example</a> </td>  </tr>
