@@ -13,11 +13,14 @@ Install:
 
 Example of Usage:
    ```shell
-   find flower_photos -name '*.jpg' | python resnet.py --labels flower_photos/label_list.txt
+   find . -name '*.jpg' | python resnet.py
+   find . -name '*.jpg' | python resnet.py --labels flower_photos/label_list.txt
 ```
 
 Input: images (bitmaps) on stdin such as <a href="flower_photos/daisy/134409839_71069a95d1_m.jpg">this</a>.
 
-Outputs labels and scores for each input image.
+Outputs labels and scores for each input image.  By default, labels
+are the Imagenet2012 categories.  Fine tuning will be necessary for
+custom labels.
 
 Click <a href="https://bj.bcebos.com/paddlehub-dataset/flower_photos.tar.gz">here</a> for more pictures of flowers.
