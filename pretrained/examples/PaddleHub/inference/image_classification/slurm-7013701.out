@@ -1,0 +1,7 @@
+W0818 11:15:07.947893 30234 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 5.2, Driver API Version: 11.1, Runtime API Version: 10.2
+W0818 11:15:07.977797 30234 device_context.cc:422] device: 0, cuDNN Version: 8.0.
+[32m[2021-08-18 11:15:12,709] [    INFO][0m - PaddleHub model checkpoint loaded. current_epoch=26 [acc=0.9217][0m
+[36m[2021-08-18 11:18:21,160] [   TRAIN][0m - Epoch=27/100, Step=10/92 loss=0.1410 acc=0.9500 lr=0.001000 step/sec=0.05 | ETA 47:57:25[0m
+[36m[2021-08-18 11:21:26,202] [   TRAIN][0m - Epoch=27/100, Step=20/92 loss=0.1823 acc=0.9438 lr=0.001000 step/sec=0.05 | ETA 47:37:22[0m
+[36m[2021-08-18 11:24:30,564] [   TRAIN][0m - Epoch=27/100, Step=30/92 loss=0.1155 acc=0.9625 lr=0.001000 step/sec=0.05 | ETA 47:27:12[0m
+[36m[2021-08-18 11:27:34,368] [   TRAIN][0m - Epoch=27/100, Step=40/92 loss=0.1015 acc=0.9688 lr=0.001000 step/sec=0.05 | ETA 47:19:59[0m
