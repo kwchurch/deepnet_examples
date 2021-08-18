@@ -14,7 +14,7 @@ are.
 
 <table id="shortcuts">
 <tr> <th> </th>      <th> PaddleHub </th>  <th> PaddleNLP </th> <th> HuggingFaceHub </th> <th> Fairseq </th> </tr>
-<tr> <th> Image Classification </th>  <td> <td> </td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/image_classification">example</a>  </td> <td> </td> </tr>
+<tr> <th> Image Classification </th>  <td> <a href="pretrained/examples/PaddleHub/inference/image_classification">example</a>  <td> </td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/image_classification">example</a>  </td> <td> </td> </tr>
 <tr> <th> OCR </th>  <td> <a href="pretrained/examples/PaddleHub/inference/OCR">example</a> <td> </td> </td> <td> </td> <td> </td> </tr>
 <tr> <th> Sentiment </th> <td> <a href="pretrained/examples/PaddleHub/inference/sentiment">example</a> <td> </td> </td> <td> <a href="pretrained/examples/HuggingFaceHub/inference/sentiment">example</a>  </td> <td> </td> </tr>
 <tr> <th> NER (named editity recognition)</th> <td> </td> <td> </td><td> <a href="pretrained/examples/HuggingFaceHub/inference/ner">example</a> </td>  </tr>
