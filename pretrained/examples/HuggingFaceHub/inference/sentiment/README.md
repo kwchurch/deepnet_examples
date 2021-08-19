@@ -7,7 +7,7 @@
   python sentiment.py < sample_sentiment_input.txt 
 ```
 
-Huggingface pipelines provides support for a number of important applications including:
+Huggingface pipelines provide support for a number of important applications including:
 <ol>
 <li>sentiment-analysis</li>
 <li>ner (Named Entity Recognition)</li>

@@ -1,0 +1,8 @@
+wheel
+pyworld
+soundfile
+scipy
+numpy
+espnet
+torch
+

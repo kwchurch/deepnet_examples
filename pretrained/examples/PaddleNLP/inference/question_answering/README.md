@@ -30,3 +30,8 @@ better solutions such as <a
 href="https://github.com/ncbi-nlp/Ab3P">Ab3P</a>.
 
 We have tested on python 3.6.9.  Other versions may work, though they have not been tested.
+
+See <a href="https://github.com/kwchurch/bert_acronym.py">here</a> for examples like bert_acronym.py and ernie_acronym.py, but
+with more models.
+
+

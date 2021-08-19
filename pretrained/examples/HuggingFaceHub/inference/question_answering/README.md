@@ -23,3 +23,5 @@ For a more comprehensive list:
 ```
 
 See <a href="https://huggingface.co/transformers/task_summary.html">documentation from HuggingFace</a>.
+
+QA methods can be used to find definitions of acronyms.  See <a href="https://github.com/kwchurch/bert_acronym.py">here</a> for some examples.

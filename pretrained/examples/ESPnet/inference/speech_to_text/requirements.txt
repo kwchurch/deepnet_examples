@@ -1,0 +1,6 @@
+kenlm
+numpy
+espnet
+scipy
+espnet_model_zoo
+soundfile
