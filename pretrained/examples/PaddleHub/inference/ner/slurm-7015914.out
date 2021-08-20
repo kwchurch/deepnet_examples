@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "fine_tune_ner.py", line 3, in <module>
+    import paddlehub as hub
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddlehub/__init__.py", line 20, in <module>
+    _paddle_version = Version(paddle.__version__)
+AttributeError: module 'paddle' has no attribute '__version__'

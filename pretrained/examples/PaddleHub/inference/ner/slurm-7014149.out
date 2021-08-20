@@ -1,0 +1,87 @@
+[32m[2021-08-18 13:50:43,751] [    INFO][0m - Already cached /mnt/home/kwc/.paddlenlp/models/ernie-tiny/ernie_tiny.pdparams[0m
+W0818 13:50:43.755745 36438 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 5.2, Driver API Version: 11.1, Runtime API Version: 10.2
+W0818 13:50:43.791435 36438 device_context.cc:422] device: 0, cuDNN Version: 8.0.
+[32m[2021-08-18 13:50:49,410] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-18 13:50:49,422] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-18 13:50:49,428] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[32m[2021-08-18 13:51:02,850] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-18 13:51:02,853] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-18 13:51:02,855] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[33m[2021-08-18 13:51:07,702] [ WARNING][0m - PaddleHub model checkpoint not found, start from scratch...[0m
+[33m[2021-08-18 13:51:13,774] [ WARNING][0m - Compatibility Warning: The params of ChunkEvaluator.compute has been modified. The old version is `inputs`, `lengths`, `predictions`, `labels` while the current version is `lengths`, `predictions`, `labels`.  Please update the usage.[0m
+[36m[2021-08-18 13:53:43,518] [   TRAIN][0m - Epoch=1/3, Step=10/652 loss=0.4120 f1_score=0.0047 lr=0.000050 step/sec=0.06 | ETA 08:27:57[0m
+[36m[2021-08-18 13:56:32,303] [   TRAIN][0m - Epoch=1/3, Step=20/652 loss=0.1436 f1_score=0.0049 lr=0.000050 step/sec=0.06 | ETA 08:49:05[0m
+[36m[2021-08-18 13:59:15,791] [   TRAIN][0m - Epoch=1/3, Step=30/652 loss=0.0932 f1_score=0.1778 lr=0.000050 step/sec=0.06 | ETA 08:50:23[0m
+[36m[2021-08-18 14:02:13,674] [   TRAIN][0m - Epoch=1/3, Step=40/652 loss=0.0664 f1_score=0.3856 lr=0.000050 step/sec=0.06 | ETA 09:02:46[0m
+[36m[2021-08-18 14:05:25,948] [   TRAIN][0m - Epoch=1/3, Step=50/652 loss=0.0511 f1_score=0.4558 lr=0.000050 step/sec=0.05 | ETA 09:19:34[0m
+[36m[2021-08-18 14:08:52,515] [   TRAIN][0m - Epoch=1/3, Step=60/652 loss=0.0460 f1_score=0.4983 lr=0.000050 step/sec=0.05 | ETA 09:38:32[0m
+[36m[2021-08-18 14:12:36,663] [   TRAIN][0m - Epoch=1/3, Step=70/652 loss=0.0382 f1_score=0.5337 lr=0.000050 step/sec=0.04 | ETA 10:00:17[0m
+[36m[2021-08-18 14:16:32,587] [   TRAIN][0m - Epoch=1/3, Step=80/652 loss=0.0368 f1_score=0.5582 lr=0.000050 step/sec=0.04 | ETA 10:21:23[0m
+[36m[2021-08-18 14:20:52,243] [   TRAIN][0m - Epoch=1/3, Step=90/652 loss=0.0303 f1_score=0.5699 lr=0.000050 step/sec=0.04 | ETA 10:46:24[0m
+[36m[2021-08-18 14:24:40,822] [   TRAIN][0m - Epoch=1/3, Step=100/652 loss=0.0292 f1_score=0.6753 lr=0.000050 step/sec=0.04 | ETA 10:56:16[0m
+[36m[2021-08-18 14:28:59,423] [   TRAIN][0m - Epoch=1/3, Step=110/652 loss=0.0331 f1_score=0.6085 lr=0.000050 step/sec=0.04 | ETA 11:13:15[0m
+[36m[2021-08-18 14:32:42,103] [   TRAIN][0m - Epoch=1/3, Step=120/652 loss=0.0284 f1_score=0.6908 lr=0.000050 step/sec=0.04 | ETA 11:17:38[0m
+[36m[2021-08-18 14:36:58,664] [   TRAIN][0m - Epoch=1/3, Step=130/652 loss=0.0262 f1_score=0.6616 lr=0.000050 step/sec=0.04 | ETA 11:29:51[0m
+[36m[2021-08-18 14:41:35,904] [   TRAIN][0m - Epoch=1/3, Step=140/652 loss=0.0238 f1_score=0.6972 lr=0.000050 step/sec=0.04 | ETA 11:45:08[0m
+[36m[2021-08-18 14:46:05,861] [   TRAIN][0m - Epoch=1/3, Step=150/652 loss=0.0264 f1_score=0.7240 lr=0.000050 step/sec=0.04 | ETA 11:56:47[0m
+[36m[2021-08-18 14:51:02,574] [   TRAIN][0m - Epoch=1/3, Step=160/652 loss=0.0283 f1_score=0.7113 lr=0.000050 step/sec=0.03 | ETA 12:12:27[0m
+[36m[2021-08-18 14:55:45,017] [   TRAIN][0m - Epoch=1/3, Step=170/652 loss=0.0248 f1_score=0.7035 lr=0.000050 step/sec=0.04 | ETA 12:23:31[0m
+[36m[2021-08-18 15:00:21,908] [   TRAIN][0m - Epoch=1/3, Step=180/652 loss=0.0240 f1_score=0.7192 lr=0.000050 step/sec=0.04 | ETA 12:32:22[0m
+[36m[2021-08-18 15:04:46,261] [   TRAIN][0m - Epoch=1/3, Step=190/652 loss=0.0296 f1_score=0.7142 lr=0.000050 step/sec=0.04 | ETA 12:38:07[0m
+[36m[2021-08-18 15:09:52,819] [   TRAIN][0m - Epoch=1/3, Step=200/652 loss=0.0240 f1_score=0.7058 lr=0.000050 step/sec=0.03 | ETA 12:50:11[0m
+[36m[2021-08-18 15:14:46,154] [   TRAIN][0m - Epoch=1/3, Step=210/652 loss=0.0255 f1_score=0.7079 lr=0.000050 step/sec=0.03 | ETA 12:59:03[0m
+[36m[2021-08-18 15:19:31,988] [   TRAIN][0m - Epoch=1/3, Step=220/652 loss=0.0253 f1_score=0.6946 lr=0.000050 step/sec=0.03 | ETA 13:05:59[0m
+[36m[2021-08-18 15:24:25,633] [   TRAIN][0m - Epoch=1/3, Step=230/652 loss=0.0230 f1_score=0.7205 lr=0.000050 step/sec=0.03 | ETA 13:13:26[0m
+[36m[2021-08-18 15:29:32,479] [   TRAIN][0m - Epoch=1/3, Step=240/652 loss=0.0200 f1_score=0.7341 lr=0.000050 step/sec=0.03 | ETA 13:22:03[0m
+[36m[2021-08-18 15:34:55,264] [   TRAIN][0m - Epoch=1/3, Step=250/652 loss=0.0216 f1_score=0.7527 lr=0.000050 step/sec=0.03 | ETA 13:32:04[0m
+[36m[2021-08-18 15:40:31,633] [   TRAIN][0m - Epoch=1/3, Step=260/652 loss=0.0184 f1_score=0.7743 lr=0.000050 step/sec=0.03 | ETA 13:43:00[0m
+[36m[2021-08-18 15:45:41,549] [   TRAIN][0m - Epoch=1/3, Step=270/652 loss=0.0262 f1_score=0.7426 lr=0.000050 step/sec=0.03 | ETA 13:49:57[0m
+[36m[2021-08-18 15:50:18,392] [   TRAIN][0m - Epoch=1/3, Step=280/652 loss=0.0192 f1_score=0.7853 lr=0.000050 step/sec=0.04 | ETA 13:52:32[0m
+[36m[2021-08-18 15:56:35,844] [   TRAIN][0m - Epoch=1/3, Step=290/652 loss=0.0199 f1_score=0.7714 lr=0.000050 step/sec=0.03 | ETA 14:06:16[0m
+[36m[2021-08-18 16:01:53,864] [   TRAIN][0m - Epoch=1/3, Step=300/652 loss=0.0229 f1_score=0.7431 lr=0.000050 step/sec=0.03 | ETA 14:12:36[0m
+[36m[2021-08-18 16:08:20,291] [   TRAIN][0m - Epoch=1/3, Step=310/652 loss=0.0206 f1_score=0.7305 lr=0.000050 step/sec=0.03 | ETA 14:25:44[0m
+[36m[2021-08-18 16:14:26,151] [   TRAIN][0m - Epoch=1/3, Step=320/652 loss=0.0206 f1_score=0.7685 lr=0.000050 step/sec=0.03 | ETA 14:35:58[0m
+[36m[2021-08-18 16:21:01,548] [   TRAIN][0m - Epoch=1/3, Step=330/652 loss=0.0178 f1_score=0.7748 lr=0.000050 step/sec=0.03 | ETA 14:48:28[0m
+[36m[2021-08-18 16:26:48,516] [   TRAIN][0m - Epoch=1/3, Step=340/652 loss=0.0243 f1_score=0.7578 lr=0.000050 step/sec=0.03 | ETA 14:55:37[0m
+[36m[2021-08-18 16:33:17,668] [   TRAIN][0m - Epoch=1/3, Step=350/652 loss=0.0204 f1_score=0.7966 lr=0.000050 step/sec=0.03 | ETA 15:06:16[0m
+[36m[2021-08-18 16:38:50,682] [   TRAIN][0m - Epoch=1/3, Step=360/652 loss=0.0199 f1_score=0.7482 lr=0.000050 step/sec=0.03 | ETA 15:11:15[0m
+[36m[2021-08-18 16:44:21,257] [   TRAIN][0m - Epoch=1/3, Step=370/652 loss=0.0205 f1_score=0.7985 lr=0.000050 step/sec=0.03 | ETA 15:15:45[0m
+[36m[2021-08-18 16:49:41,978] [   TRAIN][0m - Epoch=1/3, Step=380/652 loss=0.0178 f1_score=0.7725 lr=0.000050 step/sec=0.03 | ETA 15:19:10[0m
+[36m[2021-08-18 16:56:20,884] [   TRAIN][0m - Epoch=1/3, Step=390/652 loss=0.0178 f1_score=0.7599 lr=0.000050 step/sec=0.03 | ETA 15:28:56[0m
+[36m[2021-08-18 17:02:22,470] [   TRAIN][0m - Epoch=1/3, Step=400/652 loss=0.0179 f1_score=0.7992 lr=0.000050 step/sec=0.03 | ETA 15:35:11[0m
+[36m[2021-08-18 17:07:47,615] [   TRAIN][0m - Epoch=1/3, Step=410/652 loss=0.0177 f1_score=0.8109 lr=0.000050 step/sec=0.03 | ETA 15:38:14[0m
+[36m[2021-08-18 17:14:09,098] [   TRAIN][0m - Epoch=1/3, Step=420/652 loss=0.0177 f1_score=0.7783 lr=0.000050 step/sec=0.03 | ETA 15:45:30[0m
+[36m[2021-08-18 17:20:43,203] [   TRAIN][0m - Epoch=1/3, Step=430/652 loss=0.0199 f1_score=0.7437 lr=0.000050 step/sec=0.03 | ETA 15:53:23[0m
+[36m[2021-08-18 17:26:10,966] [   TRAIN][0m - Epoch=1/3, Step=440/652 loss=0.0190 f1_score=0.8205 lr=0.000050 step/sec=0.03 | ETA 15:56:00[0m
+[36m[2021-08-18 17:32:04,934] [   TRAIN][0m - Epoch=1/3, Step=450/652 loss=0.0167 f1_score=0.8162 lr=0.000050 step/sec=0.03 | ETA 16:00:24[0m
+[36m[2021-08-18 17:38:34,472] [   TRAIN][0m - Epoch=1/3, Step=460/652 loss=0.0174 f1_score=0.7915 lr=0.000050 step/sec=0.03 | ETA 16:07:08[0m
+[36m[2021-08-18 17:45:35,093] [   TRAIN][0m - Epoch=1/3, Step=470/652 loss=0.0172 f1_score=0.8086 lr=0.000050 step/sec=0.02 | ETA 16:15:44[0m
+[36m[2021-08-18 17:52:50,110] [   TRAIN][0m - Epoch=1/3, Step=480/652 loss=0.0149 f1_score=0.8118 lr=0.000050 step/sec=0.02 | ETA 16:24:57[0m
+[36m[2021-08-18 18:00:00,178] [   TRAIN][0m - Epoch=1/3, Step=490/652 loss=0.0179 f1_score=0.7616 lr=0.000050 step/sec=0.02 | ETA 16:33:28[0m
+[36m[2021-08-18 18:06:43,760] [   TRAIN][0m - Epoch=1/3, Step=500/652 loss=0.0161 f1_score=0.8018 lr=0.000050 step/sec=0.02 | ETA 16:39:54[0m
+[36m[2021-08-18 18:13:50,753] [   TRAIN][0m - Epoch=1/3, Step=510/652 loss=0.0149 f1_score=0.7931 lr=0.000050 step/sec=0.02 | ETA 16:47:35[0m
+[36m[2021-08-18 18:21:35,338] [   TRAIN][0m - Epoch=1/3, Step=520/652 loss=0.0182 f1_score=0.8152 lr=0.000050 step/sec=0.02 | ETA 16:57:20[0m
+[36m[2021-08-18 18:29:05,852] [   TRAIN][0m - Epoch=1/3, Step=530/652 loss=0.0151 f1_score=0.8122 lr=0.000050 step/sec=0.02 | ETA 17:05:51[0m
+[36m[2021-08-18 18:36:27,567] [   TRAIN][0m - Epoch=1/3, Step=540/652 loss=0.0172 f1_score=0.7950 lr=0.000050 step/sec=0.02 | ETA 17:13:31[0m
+[36m[2021-08-18 18:42:36,125] [   TRAIN][0m - Epoch=1/3, Step=550/652 loss=0.0154 f1_score=0.8349 lr=0.000050 step/sec=0.03 | ETA 17:16:35[0m
+[36m[2021-08-18 18:50:34,721] [   TRAIN][0m - Epoch=1/3, Step=560/652 loss=0.0128 f1_score=0.8178 lr=0.000050 step/sec=0.02 | ETA 17:25:56[0m
+[36m[2021-08-18 18:56:28,987] [   TRAIN][0m - Epoch=1/3, Step=570/652 loss=0.0209 f1_score=0.7750 lr=0.000050 step/sec=0.03 | ETA 17:27:50[0m
+[36m[2021-08-18 19:03:04,651] [   TRAIN][0m - Epoch=1/3, Step=580/652 loss=0.0189 f1_score=0.8029 lr=0.000050 step/sec=0.03 | ETA 17:32:01[0m
+[36m[2021-08-18 19:09:34,252] [   TRAIN][0m - Epoch=1/3, Step=590/652 loss=0.0162 f1_score=0.8153 lr=0.000050 step/sec=0.03 | ETA 17:35:43[0m
+[36m[2021-08-18 19:16:02,809] [   TRAIN][0m - Epoch=1/3, Step=600/652 loss=0.0123 f1_score=0.8179 lr=0.000050 step/sec=0.03 | ETA 17:39:14[0m
+[36m[2021-08-18 19:23:19,190] [   TRAIN][0m - Epoch=1/3, Step=610/652 loss=0.0158 f1_score=0.7855 lr=0.000050 step/sec=0.02 | ETA 17:45:11[0m
+[36m[2021-08-18 19:29:41,406] [   TRAIN][0m - Epoch=1/3, Step=620/652 loss=0.0164 f1_score=0.7932 lr=0.000050 step/sec=0.03 | ETA 17:48:06[0m
+[36m[2021-08-18 19:38:45,361] [   TRAIN][0m - Epoch=1/3, Step=630/652 loss=0.0179 f1_score=0.7915 lr=0.000050 step/sec=0.02 | ETA 17:59:18[0m
+[36m[2021-08-18 19:45:01,402] [   TRAIN][0m - Epoch=1/3, Step=640/652 loss=0.0144 f1_score=0.8565 lr=0.000050 step/sec=0.03 | ETA 18:01:35[0m
+[36m[2021-08-18 19:51:22,153] [   TRAIN][0m - Epoch=1/3, Step=650/652 loss=0.0123 f1_score=0.8408 lr=0.000050 step/sec=0.03 | ETA 18:04:02[0m
+[36m[2021-08-18 20:00:06,074] [   TRAIN][0m - Epoch=2/3, Step=10/652 loss=0.0093 f1_score=0.8706 lr=0.000050 step/sec=0.02 | ETA 18:10:11[0m
+[36m[2021-08-18 20:07:09,384] [   TRAIN][0m - Epoch=2/3, Step=20/652 loss=0.0100 f1_score=0.8707 lr=0.000050 step/sec=0.02 | ETA 18:14:30[0m
+[36m[2021-08-18 20:15:13,149] [   TRAIN][0m - Epoch=2/3, Step=30/652 loss=0.0118 f1_score=0.8470 lr=0.000050 step/sec=0.02 | ETA 18:21:35[0m
+[36m[2021-08-18 20:23:42,673] [   TRAIN][0m - Epoch=2/3, Step=40/652 loss=0.0101 f1_score=0.8698 lr=0.000050 step/sec=0.02 | ETA 18:29:40[0m
+[36m[2021-08-18 20:30:52,001] [   TRAIN][0m - Epoch=2/3, Step=50/652 loss=0.0121 f1_score=0.8575 lr=0.000050 step/sec=0.02 | ETA 18:33:48[0m
+[36m[2021-08-18 20:37:34,825] [   TRAIN][0m - Epoch=2/3, Step=60/652 loss=0.0122 f1_score=0.8515 lr=0.000050 step/sec=0.02 | ETA 18:36:36[0m
+[36m[2021-08-18 20:44:47,168] [   TRAIN][0m - Epoch=2/3, Step=70/652 loss=0.0083 f1_score=0.8967 lr=0.000050 step/sec=0.02 | ETA 18:40:39[0m
+[36m[2021-08-18 20:52:28,991] [   TRAIN][0m - Epoch=2/3, Step=80/652 loss=0.0089 f1_score=0.8662 lr=0.000050 step/sec=0.02 | ETA 18:45:54[0m
+[36m[2021-08-18 21:00:52,315] [   TRAIN][0m - Epoch=2/3, Step=90/652 loss=0.0095 f1_score=0.8789 lr=0.000050 step/sec=0.02 | ETA 18:52:51[0m
+[36m[2021-08-18 21:09:50,120] [   TRAIN][0m - Epoch=2/3, Step=100/652 loss=0.0077 f1_score=0.8958 lr=0.000050 step/sec=0.02 | ETA 19:01:06[0m
+slurmstepd-asimov-91: error: *** JOB 7014149 ON asimov-91 CANCELLED AT 2021-08-18T21:18:14 ***

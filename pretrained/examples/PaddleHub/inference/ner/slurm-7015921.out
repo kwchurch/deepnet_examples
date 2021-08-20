@@ -1,0 +1,13 @@
+[32m[2021-08-19 13:52:15,608] [    INFO][0m - Already cached /mnt/home/kwc/.paddlenlp/models/ernie-tiny/ernie_tiny.pdparams[0m
+[32m[2021-08-19 13:52:23,051] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-19 13:52:23,060] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-19 13:52:23,065] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[32m[2021-08-19 13:52:40,305] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-19 13:52:40,307] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-19 13:52:40,309] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[32m[2021-08-19 13:52:45,559] [    INFO][0m - PaddleHub model checkpoint loaded. current_epoch=1 [f1_score=0.8716][0m
+[33m[2021-08-19 13:52:54,166] [ WARNING][0m - Compatibility Warning: The params of ChunkEvaluator.compute has been modified. The old version is `inputs`, `lengths`, `predictions`, `labels` while the current version is `lengths`, `predictions`, `labels`.  Please update the usage.[0m
+[36m[2021-08-19 13:59:00,541] [   TRAIN][0m - Epoch=2/3, Step=10/652 loss=0.0143 f1_score=0.8404 lr=0.000050 step/sec=0.03 | ETA 20:11:46[0m
+[36m[2021-08-19 14:05:08,828] [   TRAIN][0m - Epoch=2/3, Step=20/652 loss=0.0148 f1_score=0.8295 lr=0.000050 step/sec=0.03 | ETA 20:06:11[0m
+[36m[2021-08-19 14:12:52,624] [   TRAIN][0m - Epoch=2/3, Step=30/652 loss=0.0144 f1_score=0.8458 lr=0.000050 step/sec=0.02 | ETA 21:48:07[0m
+slurmstepd-asimov-84: error: *** JOB 7015921 ON asimov-84 CANCELLED AT 2021-08-19T14:24:31 ***

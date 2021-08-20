@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "fine_tune_ner.py", line 3, in <module>
+    import paddlehub as hub
+ModuleNotFoundError: No module named 'paddlehub'

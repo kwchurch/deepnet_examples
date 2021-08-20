@@ -1,0 +1,37 @@
+[32m[2021-08-19 10:03:49,372] [    INFO][0m - Already cached /mnt/home/kwc/.paddlenlp/models/ernie-tiny/ernie_tiny.pdparams[0m
+[32m[2021-08-19 10:03:57,149] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-19 10:03:57,157] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-19 10:03:57,162] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[32m[2021-08-19 10:04:16,344] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-19 10:04:16,346] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-19 10:04:16,348] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[32m[2021-08-19 10:04:22,179] [    INFO][0m - PaddleHub model checkpoint loaded. current_epoch=1 [f1_score=0.8716][0m
+[33m[2021-08-19 10:04:29,741] [ WARNING][0m - Compatibility Warning: The params of ChunkEvaluator.compute has been modified. The old version is `inputs`, `lengths`, `predictions`, `labels` while the current version is `lengths`, `predictions`, `labels`.  Please update the usage.[0m
+[36m[2021-08-19 10:11:14,540] [   TRAIN][0m - Epoch=2/3, Step=10/652 loss=0.0143 f1_score=0.8284 lr=0.000050 step/sec=0.02 | ETA 22:17:48[0m
+[36m[2021-08-19 10:17:36,250] [   TRAIN][0m - Epoch=2/3, Step=20/652 loss=0.0140 f1_score=0.8373 lr=0.000050 step/sec=0.03 | ETA 21:31:05[0m
+[36m[2021-08-19 10:25:12,933] [   TRAIN][0m - Epoch=2/3, Step=30/652 loss=0.0144 f1_score=0.8521 lr=0.000050 step/sec=0.02 | ETA 22:36:59[0m
+[36m[2021-08-19 10:32:05,429] [   TRAIN][0m - Epoch=2/3, Step=40/652 loss=0.0126 f1_score=0.8412 lr=0.000050 step/sec=0.02 | ETA 22:33:55[0m
+[36m[2021-08-19 10:40:00,755] [   TRAIN][0m - Epoch=2/3, Step=50/652 loss=0.0127 f1_score=0.8703 lr=0.000050 step/sec=0.02 | ETA 23:13:03[0m
+[36m[2021-08-19 10:47:26,903] [   TRAIN][0m - Epoch=2/3, Step=60/652 loss=0.0131 f1_score=0.8288 lr=0.000050 step/sec=0.02 | ETA 23:23:17[0m
+[36m[2021-08-19 10:55:09,651] [   TRAIN][0m - Epoch=2/3, Step=70/652 loss=0.0119 f1_score=0.8524 lr=0.000050 step/sec=0.02 | ETA 23:38:19[0m
+[36m[2021-08-19 11:04:37,125] [   TRAIN][0m - Epoch=2/3, Step=80/652 loss=0.0140 f1_score=0.8486 lr=0.000050 step/sec=0.02 | ETA 24:32:16[0m
+[36m[2021-08-19 11:12:53,263] [   TRAIN][0m - Epoch=2/3, Step=90/652 loss=0.0096 f1_score=0.8755 lr=0.000050 step/sec=0.02 | ETA 24:48:24[0m
+[36m[2021-08-19 11:20:08,437] [   TRAIN][0m - Epoch=2/3, Step=100/652 loss=0.0109 f1_score=0.8646 lr=0.000050 step/sec=0.02 | ETA 24:41:25[0m
+[36m[2021-08-19 11:28:56,140] [   TRAIN][0m - Epoch=2/3, Step=110/652 loss=0.0126 f1_score=0.8236 lr=0.000050 step/sec=0.02 | ETA 25:03:08[0m
+[36m[2021-08-19 11:36:16,200] [   TRAIN][0m - Epoch=2/3, Step=120/652 loss=0.0102 f1_score=0.8651 lr=0.000050 step/sec=0.02 | ETA 24:57:26[0m
+[36m[2021-08-19 11:43:55,267] [   TRAIN][0m - Epoch=2/3, Step=130/652 loss=0.0086 f1_score=0.8773 lr=0.000050 step/sec=0.02 | ETA 24:57:22[0m
+[36m[2021-08-19 11:52:50,381] [   TRAIN][0m - Epoch=2/3, Step=140/652 loss=0.0089 f1_score=0.8916 lr=0.000050 step/sec=0.02 | ETA 25:15:01[0m
+[36m[2021-08-19 12:01:08,995] [   TRAIN][0m - Epoch=2/3, Step=150/652 loss=0.0103 f1_score=0.8383 lr=0.000050 step/sec=0.02 | ETA 25:22:22[0m
+[36m[2021-08-19 12:09:57,415] [   TRAIN][0m - Epoch=2/3, Step=160/652 loss=0.0118 f1_score=0.9050 lr=0.000050 step/sec=0.02 | ETA 25:34:53[0m
+[36m[2021-08-19 12:19:30,067] [   TRAIN][0m - Epoch=2/3, Step=170/652 loss=0.0094 f1_score=0.8744 lr=0.000050 step/sec=0.02 | ETA 25:54:25[0m
+[36m[2021-08-19 12:28:04,838] [   TRAIN][0m - Epoch=2/3, Step=180/652 loss=0.0108 f1_score=0.8673 lr=0.000050 step/sec=0.02 | ETA 26:01:17[0m
+[36m[2021-08-19 12:36:09,840] [   TRAIN][0m - Epoch=2/3, Step=190/652 loss=0.0120 f1_score=0.8694 lr=0.000050 step/sec=0.02 | ETA 26:02:20[0m
+[36m[2021-08-19 12:44:12,062] [   TRAIN][0m - Epoch=2/3, Step=200/652 loss=0.0109 f1_score=0.8614 lr=0.000050 step/sec=0.02 | ETA 26:02:49[0m
+[36m[2021-08-19 12:52:39,359] [   TRAIN][0m - Epoch=2/3, Step=210/652 loss=0.0127 f1_score=0.8578 lr=0.000050 step/sec=0.02 | ETA 26:07:09[0m
+[36m[2021-08-19 12:59:45,079] [   TRAIN][0m - Epoch=2/3, Step=220/652 loss=0.0099 f1_score=0.8676 lr=0.000050 step/sec=0.02 | ETA 25:59:00[0m
+[36m[2021-08-19 13:08:03,790] [   TRAIN][0m - Epoch=2/3, Step=230/652 loss=0.0102 f1_score=0.8514 lr=0.000050 step/sec=0.02 | ETA 26:01:54[0m
+[36m[2021-08-19 13:15:44,342] [   TRAIN][0m - Epoch=2/3, Step=240/652 loss=0.0077 f1_score=0.9027 lr=0.000050 step/sec=0.02 | ETA 25:59:23[0m
+[36m[2021-08-19 13:26:19,591] [   TRAIN][0m - Epoch=2/3, Step=250/652 loss=0.0091 f1_score=0.8555 lr=0.000050 step/sec=0.02 | ETA 26:19:51[0m
+[36m[2021-08-19 13:35:30,462] [   TRAIN][0m - Epoch=2/3, Step=260/652 loss=0.0100 f1_score=0.8827 lr=0.000050 step/sec=0.02 | ETA 26:28:09[0m
+[36m[2021-08-19 13:44:50,889] [   TRAIN][0m - Epoch=2/3, Step=270/652 loss=0.0103 f1_score=0.8496 lr=0.000050 step/sec=0.02 | ETA 26:37:00[0m
+slurmstepd-asimov-91: error: *** JOB 7015545 ON asimov-91 CANCELLED AT 2021-08-19T13:45:35 ***

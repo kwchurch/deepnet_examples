@@ -1,0 +1,11 @@
+load pretrained parameters success
+Traceback (most recent call last):
+  File "fine_tune_flowers.py", line 29, in <module>
+    trainer = hub.Trainer(model, optimizer, checkpoint_dir='img_classification_ckpt', use_gpu=True)
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddlehub/finetune/trainer.py", line 61, in __init__
+    paddle.set_device('gpu') if use_gpu else paddle.set_device('cpu')
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddle/device.py", line 186, in set_device
+    place = _convert_to_place(device)
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddle/device.py", line 126, in _convert_to_place
+    raise ValueError("The device should not be 'gpu', "
+ValueError: The device should not be 'gpu', since PaddlePaddle is not compiled with CUDA

@@ -1,0 +1,17 @@
+[32m[2021-08-19 14:56:27,405] [    INFO][0m - Already cached /mnt/home/kwc/.paddlenlp/models/ernie-tiny/ernie_tiny.pdparams[0m
+[32m[2021-08-19 14:56:46,459] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-19 14:56:46,471] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-19 14:56:46,476] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+[32m[2021-08-19 14:57:19,505] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/vocab.txt[0m
+[32m[2021-08-19 14:57:19,511] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/spm_cased_simp_sampled.model[0m
+[32m[2021-08-19 14:57:19,516] [    INFO][0m - Found /mnt/home/kwc/.paddlenlp/models/ernie-tiny/dict.wordseg.pickle[0m
+Traceback (most recent call last):
+  File "fine_tune_ner.py", line 19, in <module>
+    trainer = hub.Trainer(model, optimizer, checkpoint_dir='test_ernie_token_cls', use_gpu=True)
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddlehub/finetune/trainer.py", line 61, in __init__
+    paddle.set_device('gpu') if use_gpu else paddle.set_device('cpu')
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddle/device.py", line 186, in set_device
+    place = _convert_to_place(device)
+  File "/mnt/home/kwc/venv/deepnet_examples/lib/python3.6/site-packages/paddle/device.py", line 126, in _convert_to_place
+    raise ValueError("The device should not be 'gpu', "
+ValueError: The device should not be 'gpu', since PaddlePaddle is not compiled with CUDA
