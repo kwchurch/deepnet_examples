@@ -7,4 +7,3 @@ setuptools
 wheel
 ruamel.yaml
 librosa
-paddle-parakeet
