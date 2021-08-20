@@ -1,7 +1,5 @@
 # Application of ASR (Automatic Speech Recognition, aka Speech to Text), based on ESPNet
 
-This example is borrowed from https://huggingface.co/facebook/wav2vec2-base-960h
-
 Based on <a href="https://github.com/espnet/espnet_model_zoo">ESPnet Model Zoo</a>
 
 

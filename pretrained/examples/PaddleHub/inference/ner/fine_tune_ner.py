@@ -16,7 +16,7 @@ dev_dataset = hub.datasets.MSRA_NER(
     tokenizer=model.get_tokenizer(), max_seq_len=128, mode='dev')
 
 optimizer = paddle.optimizer.AdamW(learning_rate=5e-5, parameters=model.parameters())
-trainer = hub.Trainer(model, optimizer, checkpoint_dir='test_ernie_token_cls', use_gpu=False)
+trainer = hub.Trainer(model, optimizer, checkpoint_dir='test_ernie_token_cls', use_gpu=True)
 
 trainer.train(train_dataset, epochs=3, batch_size=32, eval_dataset=dev_dataset, save_interval=1)
 

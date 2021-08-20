@@ -1,0 +1,144 @@
+==================================================
+Record at 2021-08-19 19:37:16
+==================================================
+Traceback (most recent call last):
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/manager.py", line 224, in search
+    module = self._local_modules[name] = HubModule.load(module_dir)
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/module.py", line 418, in load
+    py_module = utils.load_py_module(dirname, '{}.module'.format(basename))
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/utils/utils.py", line 248, in load_py_module
+    py_module = importlib.import_module(py_module_name)
+  File "/tools/python/python3.7.9/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/home/kwc/.paddlehub/modules/deepvoice3_ljspeech/module.py", line 59, in <module>
+    from parakeet.utils import io
+ImportError: cannot import name 'io' from 'parakeet.utils' (/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/parakeet/utils/__init__.py)
+
+
+
+==================================================
+Record at 2021-08-19 19:37:16
+==================================================
+Traceback (most recent call last):
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/manager.py", line 224, in search
+    module = self._local_modules[name] = HubModule.load(module_dir)
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/module.py", line 418, in load
+    py_module = utils.load_py_module(dirname, '{}.module'.format(basename))
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/utils/utils.py", line 248, in load_py_module
+    py_module = importlib.import_module(py_module_name)
+  File "/tools/python/python3.7.9/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/home/kwc/.paddlehub/modules/deepvoice3_ljspeech/module.py", line 59, in <module>
+    from parakeet.utils import io
+ImportError: cannot import name 'io' from 'parakeet.utils' (/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/parakeet/utils/__init__.py)
+
+
+
+==================================================
+Record at 2021-08-19 19:38:21
+==================================================
+Traceback (most recent call last):
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/manager.py", line 224, in search
+    module = self._local_modules[name] = HubModule.load(module_dir)
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/module.py", line 418, in load
+    py_module = utils.load_py_module(dirname, '{}.module'.format(basename))
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/utils/utils.py", line 248, in load_py_module
+    py_module = importlib.import_module(py_module_name)
+  File "/tools/python/python3.7.9/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/home/kwc/.paddlehub/modules/fastspeech_ljspeech/module.py", line 58, in <module>
+    from parakeet.models.fastspeech.fastspeech import FastSpeech as FastSpeechModel
+ModuleNotFoundError: No module named 'parakeet.models.fastspeech'
+
+
+
+==================================================
+Record at 2021-08-19 19:38:21
+==================================================
+Traceback (most recent call last):
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/manager.py", line 224, in search
+    module = self._local_modules[name] = HubModule.load(module_dir)
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/module.py", line 418, in load
+    py_module = utils.load_py_module(dirname, '{}.module'.format(basename))
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/utils/utils.py", line 248, in load_py_module
+    py_module = importlib.import_module(py_module_name)
+  File "/tools/python/python3.7.9/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/home/kwc/.paddlehub/modules/fastspeech_ljspeech/module.py", line 58, in <module>
+    from parakeet.models.fastspeech.fastspeech import FastSpeech as FastSpeechModel
+ModuleNotFoundError: No module named 'parakeet.models.fastspeech'
+
+
+
+==================================================
+Record at 2021-08-19 19:42:49
+==================================================
+Traceback (most recent call last):
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/manager.py", line 224, in search
+    module = self._local_modules[name] = HubModule.load(module_dir)
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/module.py", line 418, in load
+    py_module = utils.load_py_module(dirname, '{}.module'.format(basename))
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/utils/utils.py", line 248, in load_py_module
+    py_module = importlib.import_module(py_module_name)
+  File "/tools/python/python3.7.9/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/home/kwc/.paddlehub/modules/transformer_tts_ljspeech/module.py", line 59, in <module>
+    from parakeet.g2p.en import text_to_sequence
+ModuleNotFoundError: No module named 'parakeet.g2p'
+
+
+
+==================================================
+Record at 2021-08-19 19:42:49
+==================================================
+Traceback (most recent call last):
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/manager.py", line 224, in search
+    module = self._local_modules[name] = HubModule.load(module_dir)
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/module/module.py", line 418, in load
+    py_module = utils.load_py_module(dirname, '{}.module'.format(basename))
+  File "/mnt/home/kwc/venv/deepnet_examples10/lib/python3.7/site-packages/paddlehub/utils/utils.py", line 248, in load_py_module
+    py_module = importlib.import_module(py_module_name)
+  File "/tools/python/python3.7.9/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/mnt/home/kwc/.paddlehub/modules/transformer_tts_ljspeech/module.py", line 59, in <module>
+    from parakeet.g2p.en import text_to_sequence
+ModuleNotFoundError: No module named 'parakeet.g2p'
+
+
+

@@ -26,6 +26,6 @@ model = hub.Module(name="resnet50_vd_imagenet_ssld", label_list=["roses", "tulip
 # model = hub.Module(name="efficientnetb7_imagenet")
 
 optimizer = paddle.optimizer.Adam(learning_rate=0.001, parameters=model.parameters())
-trainer = hub.Trainer(model, optimizer, checkpoint_dir='img_classification_ckpt')
+trainer = hub.Trainer(model, optimizer, checkpoint_dir='img_classification_ckpt', use_gpu=True)
 
 trainer.train(flowers, epochs=100, batch_size=32, eval_dataset=flowers_validate, save_interval=1)

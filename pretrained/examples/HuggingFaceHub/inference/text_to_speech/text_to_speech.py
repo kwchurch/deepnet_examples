@@ -3,6 +3,8 @@ import soundfile as sf
 import numpy as np
 from espnet2.bin.tts_inference import Text2Speech
 
+assert False, 'under construction'
+
 # example is borrowed from https://www.paddlepaddle.org.cn/hubdetail?name=fastspeech_ljspeech&en_category=TextToSpeech
 # example usage: python text_to_speech.py -o audio < sample_input.txt
 

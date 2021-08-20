@@ -1,4 +1,4 @@
-paddlepaddle
+paddlepaddle-gpu
 paddlehub
 shapely
 pyclipper
