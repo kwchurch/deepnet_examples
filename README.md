@@ -3,7 +3,7 @@
 Kenneth Church
 <p>
 
-See paper <a ref="https://www.cambridge.org/core/journals/natural-language-engineering/article/emerging-trends-deep-nets-for-poets/461DEE7F7443AF208AFE0E9D80D9529D">here</a>.
+See paper <a href="https://www.cambridge.org/core/journals/natural-language-engineering/article/emerging-trends-deep-nets-for-poets/461DEE7F7443AF208AFE0E9D80D9529D">here</a>.
 
 ```bibtex
 @article{church_yuan_guo_wu_yang_chen_2021,
