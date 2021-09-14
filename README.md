@@ -3,6 +3,21 @@
 Kenneth Church
 <p>
 
+See paper <a ref="https://www.cambridge.org/core/journals/natural-language-engineering/article/emerging-trends-deep-nets-for-poets/461DEE7F7443AF208AFE0E9D80D9529D">here</a>.
+
+```bibtex
+@article{church_yuan_guo_wu_yang_chen_2021,
+title={Emerging trends: Deep nets for poets},
+volume={27},
+DOI={10.1017/S1351324921000231},
+number={5},
+journal={Natural Language Engineering},
+publisher={Cambridge University Press},
+author={Church, Kenneth Ward and Yuan, Xiaopeng and Guo, Sheng and Wu, Zewu and Yang, Yehua and Chen, Zeyu},
+year={2021},
+pages={631–645}}
+```
+
 Please feel free to send me email: <a
 href="mailto:kenneth.ward.church@gmail.com?subject=Deep_Nets_for_Poets">here</a>.
 I would appreciate feedback on the examples posted here, as well as
