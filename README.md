@@ -1,6 +1,5 @@
 # Deep Nets for Poets
 
-Kenneth Church
 <p>
 
 See paper <a href="https://www.cambridge.org/core/journals/natural-language-engineering/article/emerging-trends-deep-nets-for-poets/461DEE7F7443AF208AFE0E9D80D9529D">here</a>.
@@ -18,9 +17,9 @@ year={2021},
 pages={631–645}}
 ```
 
-Please feel free to send me email: <a
+Please feel free to send email: <a
 href="mailto:kenneth.ward.church@gmail.com?subject=Deep_Nets_for_Poets">here</a>.
-I would appreciate feedback on the examples posted here, as well as
+We would appreciate feedback on the examples posted here, as well as
 contributions with more examples and more solutions that would help
 users appreciate why they should be as excited about deep nets as we
 are.
