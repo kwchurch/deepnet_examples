@@ -1,0 +1,6 @@
+paddlepaddle-gpu
+paddlehub
+shapely
+pyclipper
+opencv-python
+numpy
