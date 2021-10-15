@@ -1,3 +1,0 @@
-from bertviz import model_view
-from transformers import BertTokenizer, BertModel
-
