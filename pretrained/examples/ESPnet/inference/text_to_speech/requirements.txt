@@ -1,3 +1,4 @@
+torch
 soundfile
 espnet
 espnet_model_zoo

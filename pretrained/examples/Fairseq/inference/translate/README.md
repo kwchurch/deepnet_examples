@@ -5,6 +5,9 @@ Super-simple example of pre-trained translation models from <a href="https://git
 Install:
    ```pip install -r requirements.txt```
 
+Download pre-trained models of interest from <a href="https://github.com/pytorch/fairseq/blob/main/examples/translation/README.md">here</a>.
+
+
 Usage:
    ```echo 'Hello World' | python translate.py -m transformer.wmt19.en-de```
 

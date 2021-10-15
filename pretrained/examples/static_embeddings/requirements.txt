@@ -1,3 +1,4 @@
+torch
 python-Levenshtein
 gensim
 transformers
